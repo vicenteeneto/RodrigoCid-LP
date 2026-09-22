@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rodrigo Cid — Partner Manager LATAM | SS&amp;C Blue Prism · Entrepreneur | Twins Group</title>
+<meta name="description" content="Rodrigo Cid — Partner Manager LATAM na SS&amp;C Blue Prism e empreendedor à frente do Twins Group. Inteligência Artificial, Automação Empresarial e Empreendedorismo.">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://rodrigocid.com/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Rodrigo Cid — Tecnologia, IA e Empreendedorismo">
+<meta property="og:description" content="Entre tecnologia e empreendedorismo existe execução. É nela que construo negócios.">
+<meta property="og:url" content="https://rodrigocid.com/">
+<meta property="og:image" content="https://rodrigocid.com/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/rodrigo-cid.webp" fetchpriority="high">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Rodrigo Cid","jobTitle":"Partner Manager LATAM","worksFor":{"@type":"Organization","name":"SS&C Blue Prism"},"url":"https://rodrigocid.com/","image":"https://rodrigocid.com/assets/rodrigo-cid.webp","knowsAbout":["Artificial Intelligence","Enterprise Automation","Entrepreneurship"]}
+</script>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+@font-face{font-family:"Geist";src:url(assets/fonts/Geist-Variable.woff2) format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Geist Mono";src:url(assets/fonts/GeistMono-Variable.woff2) format("woff2");font-weight:100 900;font-display:swap}
+:root{
+  --black:#000;
+  --ink:#0a0a0b;
+  --graphite:#16171a;
+  --graphite-2:#1f2024;
+  --line:rgba(255,255,255,.09);
+  --line-2:rgba(255,255,255,.16);
+  --fg:#f5f5f7;
+  --fg-2:#a1a1a6;
+  --fg-3:#6e6e73;
+  --paper:#f5f5f7;
+  --paper-ink:#0b0b0c;
+  --paper-2:#86868b;
+  --blue:#1f6fe5;
+  --blue-hi:#4b8fff;
+  --blue-glow:rgba(31,111,229,.45);
+  --radius:18px;
+  --pad:clamp(20px,5vw,72px);
+  --max:1240px;
+  --sans:"Geist",-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;
+  --mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--black);color:var(--fg);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:var(--blue);color:#fff}
+:focus-visible{outline:2px solid var(--blue-hi);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.label{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-3)}
+.label b{color:var(--blue-hi);font-weight:500}
+.label::after{content:"";width:40px;height:1px;background:currentColor;opacity:.5}
+
+/* ---------- NAV ---------- */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .4s var(--ease),border-color .4s var(--ease),backdrop-filter .4s;border-bottom:1px solid transparent}
+.nav.is-solid{background:rgba(0,0,0,.72);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-color:var(--line)}
+.nav.on-paper{background:rgba(245,245,247,.78);border-color:rgba(0,0,0,.08);color:var(--paper-ink)}
+.nav__in{height:64px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:600;letter-spacing:-.01em;font-size:15px}
+.brand__mark{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;background:var(--fg);color:var(--black);font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:0;transition:background .4s,color .4s}
+.nav.on-paper .brand__mark{background:var(--paper-ink);color:var(--paper)}
+.nav__links{display:flex;gap:30px;font-size:13px;color:var(--fg-2)}
+.nav.on-paper .nav__links{color:#515154}
+.nav__links a{transition:color .2s}
+.nav__links a:hover{color:currentColor;filter:brightness(1.6)}
+.nav.on-paper .nav__links a:hover{color:var(--paper-ink);filter:none}
+.nav__right{display:flex;align-items:center;gap:14px}
+.lang{display:flex;gap:2px;padding:3px;border:1px solid var(--line-2);border-radius:999px;font-family:var(--mono);font-size:11px}
+.nav.on-paper .lang{border-color:rgba(0,0,0,.12)}
+.lang button{padding:4px 9px;border-radius:999px;color:var(--fg-3);letter-spacing:.06em;transition:all .2s}
+.lang button[aria-pressed="true"]{background:var(--fg);color:var(--black)}
+.nav.on-paper .lang button[aria-pressed="true"]{background:var(--paper-ink);color:var(--paper)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:48px;padding:0 22px;border-radius:999px;font-size:15px;font-weight:500;letter-spacing:-.005em;transition:transform .25s var(--ease),background .25s,border-color .25s,color .25s,box-shadow .25s;white-space:nowrap}
+.btn svg{width:17px;height:17px;flex:none}
+.btn--primary{background:var(--blue);color:#fff;box-shadow:0 0 0 1px rgba(255,255,255,.08) inset,0 10px 30px -10px var(--blue-glow)}
+.btn--primary:hover{background:var(--blue-hi);transform:translateY(-1px)}
+.btn--ghost{border:1px solid var(--line-2);color:var(--fg)}
+.btn--ghost:hover{border-color:rgba(255,255,255,.4);background:rgba(255,255,255,.04)}
+.btn--light{background:var(--fg);color:var(--black)}
+.btn--light:hover{background:#fff;transform:translateY(-1px)}
+.btn--sm{height:36px;padding:0 16px;font-size:13px}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:stretch;overflow:hidden;isolation:isolate}
+.hero__bg{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.hero__grid{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 70% 60% at 68% 45%,#000 10%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 70% 60% at 68% 45%,#000 10%,transparent 75%);opacity:.55}
+.hero__glow{position:absolute;width:1100px;height:1100px;right:-260px;top:50%;transform:translateY(-50%);background:radial-gradient(circle,rgba(31,111,229,.38) 0%,rgba(31,111,229,.12) 32%,transparent 62%);filter:blur(10px)}
+.hero__beam{position:absolute;top:-10%;bottom:-10%;right:30%;width:1px;background:linear-gradient(to bottom,transparent,rgba(75,143,255,.55),transparent);opacity:.5;transform:rotate(14deg);transform-origin:center}
+.hero__in{position:relative;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);align-items:end;gap:24px;width:100%;padding-top:112px}
+.hero__copy{padding-bottom:clamp(56px,9vh,110px);position:relative;z-index:2}
+.hero__eyebrow{display:flex;flex-direction:column;gap:8px;margin-bottom:34px}
+.hero__eyebrow>span{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-2)}
+.hero__eyebrow>span i{width:6px;height:6px;border-radius:50%;background:var(--blue-hi);box-shadow:0 0 0 4px rgba(75,143,255,.15)}
+.hero__eyebrow>span:nth-child(2) i{background:var(--fg-3);box-shadow:none}
+.hero__name{font-size:clamp(64px,10.4vw,164px);line-height:.86;font-weight:600;letter-spacing:-.055em;margin-left:-.04em}
+.hero__name span{display:block}
+.hero__name span:last-child{color:transparent;background:linear-gradient(180deg,#fff 0%,#8e8e93 110%);-webkit-background-clip:text;background-clip:text}
+.hero__quote{margin-top:36px;max-width:540px;font-size:clamp(20px,1.9vw,26px);line-height:1.32;letter-spacing:-.02em;color:var(--fg-2);font-weight:400}
+.hero__quote em{font-style:normal;color:var(--fg)}
+.hero__quote em.x{color:var(--blue-hi)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.chip{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-2);padding:8px 12px;border:1px solid var(--line-2);border-radius:999px;background:rgba(255,255,255,.02)}
+.hero__cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
+.hero__photo{position:relative;align-self:end;justify-self:end;width:100%;max-width:620px;margin-right:calc(var(--pad) * -.4)}
+.hero__photo img{width:100%;height:auto;-webkit-mask-image:linear-gradient(to bottom,#000 70%,transparent 99%);mask-image:linear-gradient(to bottom,#000 70%,transparent 99%);transform-origin:bottom center}
+.hero__ring{position:absolute;left:50%;top:36%;width:84%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;border:1px solid rgba(255,255,255,.08);z-index:-1}
+.hero__ring::before{content:"";position:absolute;inset:12%;border-radius:50%;border:1px dashed rgba(255,255,255,.07)}
+.hero__ring::after{content:"";position:absolute;width:7px;height:7px;border-radius:50%;background:var(--blue-hi);top:50%;left:-3.5px;box-shadow:0 0 12px var(--blue-hi)}
+.hero__tag{position:absolute;right:4%;bottom:22%;z-index:2;display:flex;flex-direction:column;gap:2px;padding:12px 16px;border-radius:14px;background:rgba(10,10,11,.6);border:1px solid var(--line-2);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.hero__tag small{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-3)}
+.hero__tag strong{font-size:14px;font-weight:500;letter-spacing:-.01em}
+.scroll-hint{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--fg-3);font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;z-index:3}
+.scroll-hint i{width:1px;height:36px;background:linear-gradient(var(--fg-3),transparent);position:relative;overflow:hidden}
+.scroll-hint i::after{content:"";position:absolute;left:0;top:-40%;width:1px;height:40%;background:var(--fg);animation:drip 2.2s var(--ease) infinite}
+@keyframes drip{to{top:110%}}
+
+/* ---------- NUMBERS ---------- */
+.numbers{border-top:1px solid var(--line);position:relative}
+.numbers__grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.stat{padding:64px 0 56px;border-right:1px solid var(--line);padding-right:32px}
+.stat+.stat{padding-left:40px}
+.stat:last-child{border-right:0}
+.stat__v{font-size:clamp(56px,7vw,104px);font-weight:500;letter-spacing:-.06em;line-height:.9;font-variant-numeric:tabular-nums;display:flex;align-items:baseline}
+.stat__v small{font-size:.42em;letter-spacing:-.03em;color:var(--fg-3);font-weight:400;margin-right:.18em}
+.stat__v sup{font-size:.5em;color:var(--blue-hi);font-weight:400;margin-left:.04em;position:relative;top:-.55em}
+.stat__l{margin-top:18px;color:var(--fg-2);font-size:15px;max-width:240px;line-height:1.45}
+.numbers__row{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.fact{display:flex;gap:18px;align-items:flex-start;padding:30px 32px 34px 0}
+.fact+.fact{border-left:1px solid var(--line);padding-left:40px}
+.fact__ic{flex:none;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;border:1px solid var(--line-2);color:var(--blue-hi)}
+.fact__ic svg{width:18px;height:18px}
+.fact p{font-size:clamp(18px,1.6vw,22px);letter-spacing:-.02em;line-height:1.3;color:var(--fg)}
+.fact p span{color:var(--fg-3)}
+
+/* ---------- PHILOSOPHY (paper) ---------- */
+.paper{background:var(--paper);color:var(--paper-ink)}
+.paper .label{color:var(--paper-2)}
+.paper .label b{color:var(--blue)}
+.philo{padding-top:clamp(110px,16vh,180px);padding-bottom:clamp(90px,14vh,160px)}
+.philo__head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:clamp(60px,10vh,110px)}
+.philo__title{font-size:clamp(44px,6.2vw,92px);font-weight:600;letter-spacing:-.05em;line-height:.95;margin-top:22px}
+.philo__note{max-width:300px;color:var(--paper-2);font-size:15px}
+.philo__list{list-style:none;border-top:1px solid rgba(0,0,0,.1)}
+.philo__item{display:grid;grid-template-columns:120px 1fr;gap:24px;padding:clamp(34px,5.4vh,56px) 0;border-bottom:1px solid rgba(0,0,0,.1);transition:color .6s var(--ease)}
+.philo__n{font-family:var(--mono);font-size:13px;color:var(--paper-2);padding-top:.9em;letter-spacing:.06em;transition:color .6s}
+.philo__t{font-size:clamp(30px,4.4vw,64px);line-height:1.04;letter-spacing:-.045em;font-weight:500;color:#c7c7cc;transition:color .7s var(--ease);max-width:20ch}
+.philo__t b{font-weight:500}
+.philo__item.is-on .philo__t{color:var(--paper-ink)}
+.philo__item.is-on .philo__t b{color:var(--blue)}
+.philo__item.is-on .philo__n{color:var(--blue)}
+.no-js .philo__t,.philo--static .philo__t{color:var(--paper-ink)}
+
+/* ---------- CAREER ---------- */
+.sec{padding:clamp(100px,15vh,170px) 0}
+.sec__title{font-size:clamp(40px,5.4vw,80px);font-weight:600;letter-spacing:-.05em;line-height:.98;margin-top:22px;max-width:14ch}
+.sec__lead{margin-top:22px;color:var(--fg-2);font-size:clamp(17px,1.4vw,19px);max-width:520px}
+.career__top{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}
+.now{position:relative;border-radius:24px;padding:32px;background:linear-gradient(160deg,#0f1a2e 0%,#0a0a0b 60%);border:1px solid rgba(75,143,255,.22);overflow:hidden}
+.now::before{content:"";position:absolute;width:380px;height:380px;right:-140px;top:-160px;background:radial-gradient(circle,rgba(31,111,229,.45),transparent 65%)}
+.now__k{position:relative;display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue-hi)}
+.now__k i{width:6px;height:6px;border-radius:50%;background:var(--blue-hi);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.25}}
+.now__r{position:relative;margin-top:26px;font-size:clamp(26px,2.6vw,36px);font-weight:500;letter-spacing:-.035em;line-height:1.08}
+.now__c{position:relative;margin-top:8px;color:var(--fg-2)}
+.logos{margin-top:clamp(64px,10vh,100px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr)}
+.logo{height:150px;display:flex;flex-direction:column;justify-content:space-between;padding:22px 22px 24px;border-right:1px solid var(--line);transition:background .35s}
+.logo:last-child{border-right:0}
+.logo:hover{background:var(--graphite)}
+.logo small{font-family:var(--mono);font-size:11px;color:var(--fg-3);letter-spacing:.08em}
+.logo span{font-size:clamp(19px,1.75vw,25px);font-weight:600;letter-spacing:-.035em;color:var(--fg-2);transition:color .35s;line-height:1.05}
+.logo:hover span{color:var(--fg)}
+.logo span em{font-style:normal;font-weight:400;color:var(--fg-3)}
+
+/* ---------- VENTURES (paper) ---------- */
+.ventures{padding-top:clamp(100px,15vh,170px);padding-bottom:clamp(100px,15vh,170px)}
+.ventures__grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,96px);align-items:center}
+.ventures__photo{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5;background:#ddd}
+.ventures__photo img{width:100%;height:100%;object-fit:cover;object-position:50% 38%;transform:scale(1.04);transition:transform 1.4s var(--ease)}
+.ventures__photo:hover img{transform:scale(1.08)}
+.ventures__photo figcaption{position:absolute;left:18px;bottom:18px;right:18px;display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-radius:14px;background:rgba(255,255,255,.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);font-size:13px;color:var(--paper-ink)}
+.ventures__photo figcaption b{font-weight:600}
+.paper .sec__title{color:var(--paper-ink)}
+.paper .sec__lead{color:#515154}
+.venture-list{margin-top:48px;display:grid;gap:14px}
+.venture{display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;padding:26px 28px;border-radius:22px;background:#fff;border:1px solid rgba(0,0,0,.06);box-shadow:0 1px 2px rgba(0,0,0,.03);transition:transform .35s var(--ease),box-shadow .35s}
+.venture:hover{transform:translateY(-2px);box-shadow:0 18px 40px -20px rgba(0,0,0,.18)}
+.venture__mk{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;background:var(--paper-ink);color:#fff;font-family:var(--mono);font-size:14px;font-weight:500}
+.venture:nth-child(2) .venture__mk{background:var(--blue)}
+.venture h3{font-size:24px;font-weight:600;letter-spacing:-.035em;line-height:1.1}
+.venture p{color:var(--paper-2);font-size:14.5px;margin-top:3px}
+.venture__tag{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-2);border:1px solid rgba(0,0,0,.1);padding:7px 10px;border-radius:999px}
+
+/* ---------- FRONTS ---------- */
+.fronts__grid{margin-top:clamp(56px,9vh,90px);display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.front{position:relative;border-radius:22px;padding:24px 22px 26px;min-height:240px;display:flex;flex-direction:column;justify-content:space-between;background:var(--graphite);border:1px solid var(--line);overflow:hidden;transition:border-color .35s,transform .35s var(--ease)}
+.front::after{content:"";position:absolute;inset:auto -30% -60% -30%;height:80%;background:radial-gradient(ellipse at center,rgba(31,111,229,.28),transparent 60%);opacity:0;transition:opacity .5s}
+.front:hover{border-color:rgba(75,143,255,.35);transform:translateY(-3px)}
+.front:hover::after{opacity:1}
+.front__top{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1}
+.front__top small{font-family:var(--mono);font-size:11px;color:var(--fg-3)}
+.front__ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.05);color:var(--fg)}
+.front__ic svg{width:19px;height:19px}
+.front h3{position:relative;z-index:1;font-size:22px;font-weight:500;letter-spacing:-.03em;line-height:1.1}
+
+/* ---------- CONTACT ---------- */
+.contact{position:relative;overflow:hidden;border-top:1px solid var(--line)}
+.contact::before{content:"";position:absolute;left:50%;top:-340px;width:1200px;height:700px;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(31,111,229,.22),transparent 65%);pointer-events:none}
+.contact__grid{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,6vw,96px);align-items:start}
+.contact__title{font-size:clamp(48px,7vw,112px);font-weight:600;letter-spacing:-.055em;line-height:.9;margin-top:22px}
+.contact__title span{color:var(--fg-3)}
+.contact__alt{margin-top:40px;display:grid;gap:10px;max-width:420px}
+.alt{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.02);transition:border-color .25s,background .25s}
+.alt:hover{border-color:var(--line-2);background:rgba(255,255,255,.05)}
+.alt div{display:flex;align-items:center;gap:14px}
+.alt svg{width:20px;height:20px;color:var(--fg-2)}
+.alt strong{display:block;font-weight:500;font-size:15.5px;letter-spacing:-.01em}
+.alt small{display:block;color:var(--fg-3);font-size:13px}
+.alt .arr{width:16px;height:16px;color:var(--fg-3);transition:transform .25s}
+.alt:hover .arr{transform:translate(3px,-3px);color:var(--fg)}
+.form{border-radius:28px;padding:clamp(24px,3vw,40px);background:var(--graphite);border:1px solid var(--line)}
+.form__k{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-3);margin-bottom:14px}
+.opts{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.opt{height:40px;padding:0 16px;border-radius:999px;border:1px solid var(--line-2);font-size:14px;color:var(--fg-2);transition:all .2s}
+.opt:hover{color:var(--fg);border-color:rgba(255,255,255,.35)}
+.opt[aria-pressed="true"]{background:var(--fg);color:var(--black);border-color:var(--fg)}
+.field{display:block;margin-bottom:14px}
+.field span{display:block;font-size:13px;color:var(--fg-3);margin-bottom:8px}
+.field input,.field textarea{width:100%;font:inherit;font-size:16px;color:var(--fg);background:var(--ink);border:1px solid var(--line);border-radius:14px;padding:14px 16px;transition:border-color .2s,box-shadow .2s;resize:vertical}
+.field textarea{min-height:110px}
+.field input:focus,.field textarea:focus{outline:0;border-color:rgba(75,143,255,.6);box-shadow:0 0 0 4px rgba(31,111,229,.15)}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form .btn{width:100%;margin-top:10px;height:54px}
+.form__hint{margin-top:14px;font-size:12.5px;color:var(--fg-3);text-align:center}
+
+/* ---------- FOOTER ---------- */
+.foot{border-top:1px solid var(--line);padding:36px 0 40px}
+.foot__in{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;color:var(--fg-3);font-size:13px}
+.foot__in a:hover{color:var(--fg)}
+.foot__links{display:flex;gap:22px}
+
+/* ---------- MOBILE DOCK ---------- */
+.dock{display:none}
+
+/* ---------- REVEAL ---------- */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv[data-d="1"]{transition-delay:.08s}.js .rv[data-d="2"]{transition-delay:.16s}.js .rv[data-d="3"]{transition-delay:.24s}.js .rv[data-d="4"]{transition-delay:.32s}.js .rv[data-d="5"]{transition-delay:.4s}
+.js .hero .rv{transform:translateY(18px)}
+.js .hero__photo.rv{transform:translateY(40px) scale(.98);transition-duration:1.6s}
+.js .hero__photo.rv.in{transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1;transform:none;transition:none}
+  .scroll-hint i::after,.now__k i{animation:none}
+  .philo__t{transition:none}
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:1080px){
+  .nav__links{display:none}
+  .fronts__grid{grid-template-columns:repeat(3,1fr)}
+  .logos{grid-template-columns:repeat(3,1fr)}
+  .logo{border-bottom:1px solid var(--line)}
+  .logo:nth-child(3){border-right:0}
+  .logo:nth-child(n+4){border-bottom:0}
+}
+@media (max-width:860px){
+  body{font-size:16px}
+  .hero__in{grid-template-columns:1fr;padding-top:88px;gap:0}
+  .hero__copy{order:2;padding-bottom:64px;margin-top:-18%}
+  .hero__photo{order:1;justify-self:center;max-width:420px;margin:0 auto}
+  .hero__photo img{-webkit-mask-image:linear-gradient(to bottom,#000 55%,transparent 92%);mask-image:linear-gradient(to bottom,#000 55%,transparent 92%)}
+  .hero__glow{right:auto;left:50%;top:28%;transform:translate(-50%,-50%);width:760px;height:760px}
+  .hero__grid{mask-image:radial-gradient(ellipse 90% 45% at 50% 28%,#000 10%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 90% 45% at 50% 28%,#000 10%,transparent 75%)}
+  .hero__tag,.hero__beam{display:none}
+  .hero__name{font-size:clamp(60px,17vw,120px)}
+  .scroll-hint{display:none}
+  .numbers__grid{grid-template-columns:1fr}
+  .stat,.stat+.stat{padding:40px 0;border-right:0;border-bottom:1px solid var(--line)}
+  .stat:last-child{border-bottom:0}
+  .numbers__row{grid-template-columns:1fr}
+  .fact,.fact+.fact{padding:28px 0;border-left:0}
+  .fact+.fact{border-top:1px solid var(--line)}
+  .philo__head{flex-direction:column;align-items:flex-start}
+  .philo__item{grid-template-columns:1fr;gap:10px}
+  .philo__n{padding-top:0}
+  .career__top{grid-template-columns:1fr}
+  .ventures__grid{grid-template-columns:1fr}
+  .ventures__photo{aspect-ratio:4/5;max-height:620px}
+  .contact__grid{grid-template-columns:1fr}
+  .dock{display:flex;position:fixed;z-index:60;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));padding:6px;gap:6px;border-radius:20px;background:rgba(22,23,26,.82);border:1px solid var(--line-2);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);transform:translateY(140%);transition:transform .5s var(--ease)}
+  .dock.show{transform:none}
+  .dock a,.dock button{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;height:54px;border-radius:14px;font-size:10.5px;color:var(--fg-2);letter-spacing:.01em}
+  .dock svg{width:20px;height:20px}
+  .dock .is-main{background:var(--blue);color:#fff}
+  .foot{padding-bottom:110px}
+  .nav .btn--sm{display:none}
+}
+@media (max-width:640px){
+  .fronts__grid{grid-template-columns:1fr 1fr}
+  .front{min-height:170px;padding:20px 18px 22px}
+  .front h3{font-size:19px}
+  .front:last-child{grid-column:1/-1}
+  .logos{grid-template-columns:1fr 1fr}
+  .logo{height:120px;border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important}
+  .logo:nth-child(2n){border-right:0!important}
+  .logo:last-child{grid-column:1/-1;border-bottom:0!important;border-right:0!important}
+  .field-row{grid-template-columns:1fr}
+  .venture{grid-template-columns:auto 1fr;padding:20px}
+  .venture__tag{display:none}
+  .hero__cta .btn{flex:1 1 auto}
+  .hero__cta .btn--primary{flex-basis:100%}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav__in">
+    <a href="#topo" class="brand" aria-label="Rodrigo Cid">
+      <span class="brand__mark">RC</span>
+      <span>Rodrigo Cid</span>
+    </a>
+    <nav class="nav__links" aria-label="Menu">
+      <a href="#filosofia" data-i18n="nav.philo">Filosofia</a>
+      <a href="#trajetoria" data-i18n="nav.career">Trajetória</a>
+      <a href="#negocios" data-i18n="nav.ventures">Negócios</a>
+      <a href="#frentes" data-i18n="nav.fronts">Frentes</a>
+      <a href="#contato" data-i18n="nav.contact">Contato</a>
+    </nav>
+    <div class="nav__right">
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+      <button type="button" class="btn btn--light btn--sm js-vcard" data-i18n="cta.save">Salvar contato</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="topo">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__grid"></div>
+    <div class="hero__glow"></div>
+    <div class="hero__beam"></div>
+  </div>
+  <div class="wrap hero__in">
+    <div class="hero__copy">
+      <div class="hero__eyebrow rv">
+        <span><i></i>Partner Manager LATAM · SS&amp;C Blue Prism</span>
+        <span><i></i><span data-i18n="hero.role2">Empreendedor · Twins Group</span></span>
+      </div>
+      <h1 class="hero__name rv" data-d="1"><span>Rodrigo</span><span>Cid</span></h1>
+      <p class="hero__quote rv" data-d="2" data-i18n-html="hero.quote">Entre tecnologia e empreendedorismo existe <em class="x">execução</em>. <em>É nela que construo negócios.</em></p>
+      <div class="chips rv" data-d="3">
+        <span class="chip" data-i18n="pos.ai">Inteligência Artificial</span>
+        <span class="chip" data-i18n="pos.auto">Automação Empresarial</span>
+        <span class="chip" data-i18n="pos.ent">Empreendedorismo</span>
+      </div>
+      <div class="hero__cta rv" data-d="4">
+        <a class="btn btn--primary js-calendly" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>
+          <span data-i18n="cta.book">Agendar conversa</span>
+        </a>
+        <a class="btn btn--ghost js-wa" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.76-1.84-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></svg>
+          WhatsApp
+        </a>
+        <a class="btn btn--ghost js-li" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    <figure class="hero__photo rv" data-d="1">
+      <div class="hero__ring" aria-hidden="true"></div>
+      <img src="assets/rodrigo-cid.webp" width="1100" height="1466" alt="Rodrigo Cid" fetchpriority="high">
+      <div class="hero__tag" aria-hidden="true">
+        <small data-i18n="hero.tag">Atuação</small>
+        <strong data-i18n="hero.tagv">20+ países nas Américas</strong>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ NUMBERS ============ -->
+<section class="numbers" aria-label="Números">
+  <div class="wrap">
+    <div class="numbers__grid">
+      <div class="stat rv">
+        <div class="stat__v"><span class="js-count" data-to="15">15</span><sup>+</sup></div>
+        <p class="stat__l" data-i18n="num.1">anos em tecnologia corporativa</p>
+      </div>
+      <div class="stat rv" data-d="1">
+        <div class="stat__v"><span class="js-count" data-to="20">20</span><sup>+</sup></div>
+        <p class="stat__l" data-i18n="num.2">países de atuação nas Américas</p>
+      </div>
+      <div class="stat rv" data-d="2">
+        <div class="stat__v"><small>US$</small><span class="js-count" data-to="10">10</span>M<sup>+</sup></div>
+        <p class="stat__l" data-i18n="num.3">em contratos Enterprise negociados</p>
+      </div>
+    </div>
+    <div class="numbers__row">
+      <div class="fact rv">
+        <div class="fact__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6M4 21h16"/></svg></div>
+        <p data-i18n-html="num.4">Fundador do <strong style="font-weight:500">Twins Group Hospitality</strong></p>
+      </div>
+      <div class="fact rv" data-d="1">
+        <div class="fact__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 12 3 3 5-6"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <p data-i18n-html="num.5">Parceiro estratégico <span>de algumas das maiores empresas da América Latina</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHILOSOPHY ============ -->
+<section class="paper" id="filosofia">
+  <div class="wrap philo">
+    <div class="philo__head">
+      <div>
+        <div class="label rv"><b>01</b><span data-i18n="philo.k">Filosofia</span></div>
+        <h2 class="philo__title rv" data-d="1" data-i18n="philo.title">Minha filosofia.</h2>
+      </div>
+      <p class="philo__note rv" data-d="2" data-i18n="philo.note">Cinco princípios que guiam como construo empresas, parcerias e tecnologia.</p>
+    </div>
+    <ol class="philo__list" id="philo">
+      <li class="philo__item"><span class="philo__n">01</span><p class="philo__t" data-i18n-html="ph.1">Tecnologia deve gerar <b>resultado de negócio</b>, não apenas automação.</p></li>
+      <li class="philo__item"><span class="philo__n">02</span><p class="philo__t" data-i18n-html="ph.2"><b>Execução</b> vence ideias.</p></li>
+      <li class="philo__item"><span class="philo__n">03</span><p class="philo__t" data-i18n-html="ph.3">A IA não vai substituir empreendedores. <b>Vai amplificá-los.</b></p></li>
+      <li class="philo__item"><span class="philo__n">04</span><p class="philo__t" data-i18n-html="ph.4">Grandes parcerias geram <b>crescimento exponencial.</b></p></li>
+      <li class="philo__item"><span class="philo__n">05</span><p class="philo__t" data-i18n-html="ph.5">Negócios devem ser desenhados para <b>escalar sem depender de pessoas.</b></p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CAREER ============ -->
+<section class="sec" id="trajetoria">
+  <div class="wrap">
+    <div class="career__top">
+      <div>
+        <div class="label rv"><b>02</b><span data-i18n="car.k">Trajetória</span></div>
+        <h2 class="sec__title rv" data-d="1" data-i18n="car.title">Tecnologia corporativa.</h2>
+        <p class="sec__lead rv" data-d="2" data-i18n="car.lead">Mais de 15 anos em empresas globais de tecnologia — conectando IA e automação a resultado de negócio.</p>
+      </div>
+      <div class="now rv" data-d="2">
+        <div class="now__k"><i></i><span data-i18n="car.now">Hoje</span></div>
+        <p class="now__r">Partner Manager LATAM</p>
+        <p class="now__c">SS&amp;C Blue Prism</p>
+      </div>
+    </div>
+    <div class="logos" role="list">
+      <div class="logo rv" role="listitem"><small>01</small><span>SS&amp;C <em>Technologies</em></span></div>
+      <div class="logo rv" data-d="1" role="listitem"><small>02</small><span>Blue Prism</span></div>
+      <div class="logo rv" data-d="2" role="listitem"><small>03</small><span>Tableau</span></div>
+      <div class="logo rv" data-d="3" role="listitem"><small>04</small><span>Apple</span></div>
+      <div class="logo rv" data-d="4" role="listitem"><small>05</small><span>Hewlett-Packard <em>(HP)</em></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VENTURES ============ -->
+<section class="paper" id="negocios">
+  <div class="wrap ventures">
+    <div class="ventures__grid">
+      <figure class="ventures__photo rv">
+        <img src="assets/rodrigo-cid-lobby.webp" width="752" height="1632" alt="Rodrigo Cid" loading="lazy">
+        <figcaption><b>Rodrigo Cid</b><span data-i18n="ven.cap">Entrepreneur</span></figcaption>
+      </figure>
+      <div>
+        <div class="label rv"><b>03</b><span data-i18n="ven.k">Empreendimentos</span></div>
+        <h2 class="sec__title rv" data-d="1" data-i18n="ven.title">Negócios que construo.</h2>
+        <p class="sec__lead rv" data-d="2" data-i18n="ven.lead">A mesma lógica de execução, aplicada fora da tecnologia corporativa: empresas desenhadas para escalar.</p>
+        <div class="venture-list">
+          <article class="venture rv" data-d="2">
+            <div class="venture__mk">TG</div>
+            <div><h3>Twins Group</h3><p data-i18n="ven.tg">Hospitality · Fundador</p></div>
+            <span class="venture__tag" data-i18n="ven.tgt">Hospitalidade</span>
+          </article>
+          <article class="venture rv" data-d="3">
+            <div class="venture__mk">VY</div>
+            <div><h3>VYBR Tech</h3><p data-i18n="ven.vy">Tecnologia</p></div>
+            <span class="venture__tag" data-i18n="ven.vyt">Tech</span>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FRONTS ============ -->
+<section class="sec" id="frentes">
+  <div class="wrap">
+    <div class="label rv"><b>04</b><span data-i18n="fr.k">Outras frentes</span></div>
+    <h2 class="sec__title rv" data-d="1" data-i18n="fr.title">Onde mais atuo.</h2>
+    <div class="fronts__grid">
+      <article class="front rv"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09Z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2Z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span><small>01</small></div><h3 data-i18n="fr.1">Empreendedor</h3></article>
+      <article class="front rv" data-d="1"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5M8 22h8"/></svg></span><small>02</small></div><h3>Speaker</h3></article>
+      <article class="front rv" data-d="2"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z"/></svg></span><small>03</small></div><h3>Business Advisor</h3></article>
+      <article class="front rv" data-d="3"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span><small>04</small></div><h3 data-i18n="fr.4">Investidor</h3></article>
+      <article class="front rv" data-d="4"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-4a3 3 0 0 1 6 0v4M9 10h.01M15 10h.01"/></svg></span><small>05</small></div><h3>Hospitality Operator</h3></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="sec contact" id="contato">
+  <div class="wrap contact__grid">
+    <div>
+      <div class="label rv"><b>05</b><span data-i18n="ct.k">Contato</span></div>
+      <h2 class="contact__title rv" data-d="1" data-i18n-html="ct.title">Vamos<br>construir<br><span>juntos.</span></h2>
+      <div class="contact__alt">
+        <a class="alt rv js-calendly" data-d="2" href="#" target="_blank" rel="noopener">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg><span><strong data-i18n="cta.book">Agendar conversa</strong><small>Calendly</small></span></div>
+          <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <a class="alt rv js-li" data-d="3" href="#" target="_blank" rel="noopener">
+          <div><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg><span><strong>LinkedIn</strong><small data-i18n="ct.li">Conecte-se</small></span></div>
+          <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <button type="button" class="alt rv js-vcard" data-d="4" style="text-align:left;width:100%">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span><strong data-i18n="cta.save">Salvar contato</strong><small>vCard · iPhone / Android</small></span></div>
+          <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </button>
+      </div>
+    </div>
+    <form class="form rv" data-d="2" id="form" novalidate>
+      <p class="form__k" data-i18n="ct.topic">Assunto</p>
+      <div class="opts" role="group" aria-label="Assunto">
+        <button type="button" class="opt" data-topic="speaking" aria-pressed="true">Speaking</button>
+        <button type="button" class="opt" data-topic="consulting" aria-pressed="false">Enterprise Consulting</button>
+        <button type="button" class="opt" data-topic="partnerships" aria-pressed="false">Strategic Partnerships</button>
+        <button type="button" class="opt" data-topic="business" aria-pressed="false">Business Opportunities</button>
+        <button type="button" class="opt" data-topic="networking" aria-pressed="false">Networking</button>
+      </div>
+      <div class="field-row">
+        <label class="field"><span data-i18n="ct.name">Nome</span><input name="name" autocomplete="name" required></label>
+        <label class="field"><span data-i18n="ct.company">Empresa</span><input name="company" autocomplete="organization"></label>
+      </div>
+      <label class="field"><span data-i18n="ct.msg">Mensagem</span><textarea name="msg" data-i18n-ph="ct.msgph" placeholder="Conte brevemente o contexto."></textarea></label>
+      <button class="btn btn--primary" type="submit">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Z"/></svg>
+        <span data-i18n="ct.send">Enviar pelo WhatsApp</span>
+      </button>
+      <p class="form__hint" data-i18n="ct.hint">Sua mensagem abre pronta no WhatsApp.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span>© <span id="y">2026</span> Rodrigo Cid</span>
+    <div class="foot__links">
+      <a class="js-li" href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="js-wa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="js-calendly" href="#" target="_blank" rel="noopener">Calendly</a>
+    </div>
+    <span><span data-i18n="foot.by">Desenvolvido por</span> <a href="https://kngflow.com.br" target="_blank" rel="noopener" style="color:var(--fg-2)">KNGflow</a></span>
+  </div>
+</footer>
+
+<!-- ============ MOBILE DOCK ============ -->
+<nav class="dock" id="dock" aria-label="Ações rápidas">
+  <a class="is-main js-calendly" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg><span data-i18n="dock.book">Agendar</span></a>
+  <a class="js-wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.15a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Z"/></svg><span>WhatsApp</span></a>
+  <a class="js-li" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg><span>LinkedIn</span></a>
+  <button type="button" class="js-vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span data-i18n="dock.save">Salvar</span></button>
+</nav>
+
+<script>
+/* =========================================================
+   CONFIG — preencha os links reais do Rodrigo aqui
+   ========================================================= */
+const CONFIG = {
+  whatsapp: "5500000000000",                       // DDI+DDD+número, só dígitos
+  linkedin: "https://www.linkedin.com/in/SEU-PERFIL/",
+  calendly: "https://calendly.com/SEU-LINK",
+  email:    "",                                    // opcional (entra no vCard)
+  site:     "https://rodrigocid.com"
+};
+
+/* ---------- i18n ---------- */
+const T = {
+  pt:{
+    "nav.philo":"Filosofia","nav.career":"Trajetória","nav.ventures":"Negócios","nav.fronts":"Frentes","nav.contact":"Contato",
+    "cta.save":"Salvar contato","cta.book":"Agendar conversa",
+    "hero.role2":"Empreendedor · Twins Group","hero.quote":'Entre tecnologia e empreendedorismo existe <em class="x">execução</em>. <em>É nela que construo negócios.</em>',
+    "hero.tag":"Atuação","hero.tagv":"20+ países nas Américas","hero.scroll":"Role",
+    "pos.ai":"Inteligência Artificial","pos.auto":"Automação Empresarial","pos.ent":"Empreendedorismo",
+    "num.1":"anos em tecnologia corporativa","num.2":"países de atuação nas Américas","num.3":"em contratos Enterprise negociados",
+    "num.4":'Fundador do <strong style="font-weight:500">Twins Group Hospitality</strong>',
+    "num.5":"Parceiro estratégico <span>de algumas das maiores empresas da América Latina</span>",
+    "philo.k":"Filosofia","philo.title":"Minha filosofia.","philo.note":"Cinco princípios que guiam como construo empresas, parcerias e tecnologia.",
+    "ph.1":"Tecnologia deve gerar <b>resultado de negócio</b>, não apenas automação.",
+    "ph.2":"<b>Execução</b> vence ideias.",
+    "ph.3":"A IA não vai substituir empreendedores. <b>Vai amplificá-los.</b>",
+    "ph.4":"Grandes parcerias geram <b>crescimento exponencial.</b>",
+    "ph.5":"Negócios devem ser desenhados para <b>escalar sem depender de pessoas.</b>",
+    "car.k":"Trajetória","car.title":"Tecnologia corporativa.","car.lead":"Mais de 15 anos em empresas globais de tecnologia — conectando IA e automação a resultado de negócio.","car.now":"Hoje",
+    "ven.k":"Empreendimentos","ven.title":"Negócios que construo.","ven.lead":"A mesma lógica de execução, aplicada fora da tecnologia corporativa: empresas desenhadas para escalar.","ven.cap":"Empreendedor",
+    "ven.tg":"Hospitality · Fundador","ven.tgt":"Hospitalidade","ven.vy":"Tecnologia","ven.vyt":"Tech",
+    "fr.k":"Outras frentes","fr.title":"Onde mais atuo.","fr.1":"Empreendedor","fr.4":"Investidor",
+    "ct.k":"Contato","ct.title":"Vamos<br>construir<br><span>juntos.</span>","ct.li":"Conecte-se","ct.topic":"Assunto",
+    "ct.name":"Nome","ct.company":"Empresa","ct.msg":"Mensagem","ct.msgph":"Conte brevemente o contexto.","ct.send":"Enviar pelo WhatsApp","ct.hint":"Sua mensagem abre pronta no WhatsApp.",
+    "foot.by":"Desenvolvido por","dock.book":"Agendar","dock.save":"Salvar",
+    "wa.hi":"Olá, Rodrigo! Vim pelo seu site.","wa.topic":"Assunto","wa.name":"Nome","wa.company":"Empresa",
+    "meta.title":"Rodrigo Cid — Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group",
+    "vc.title":"Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group"
+  },
+  en:{
+    "nav.philo":"Philosophy","nav.career":"Career","nav.ventures":"Ventures","nav.fronts":"Focus","nav.contact":"Contact",
+    "cta.save":"Save contact","cta.book":"Book a meeting",
+    "hero.role2":"Entrepreneur · Twins Group","hero.quote":'Between technology and entrepreneurship lies <em class="x">execution</em>. <em>That is where I build businesses.</em>',
+    "hero.tag":"Reach","hero.tagv":"20+ countries across the Americas","hero.scroll":"Scroll",
+    "pos.ai":"Artificial Intelligence","pos.auto":"Enterprise Automation","pos.ent":"Entrepreneurship",
+    "num.1":"years in enterprise technology","num.2":"countries across the Americas","num.3":"in Enterprise contracts negotiated",
+    "num.4":'Founder of <strong style="font-weight:500">Twins Group Hospitality</strong>',
+    "num.5":"Strategic partner <span>to some of the largest companies in Latin America</span>",
+    "philo.k":"Philosophy","philo.title":"My philosophy.","philo.note":"Five principles that guide how I build companies, partnerships and technology.",
+    "ph.1":"Technology should create <b>business outcomes</b>, not just automation.",
+    "ph.2":"<b>Execution</b> beats ideas.",
+    "ph.3":"AI won’t replace entrepreneurs. <b>It will amplify them.</b>",
+    "ph.4":"Great partnerships create <b>exponential growth.</b>",
+    "ph.5":"Businesses should be designed to <b>scale without depending on people.</b>",
+    "car.k":"Career","car.title":"Enterprise technology.","car.lead":"15+ years at global technology companies — turning AI and automation into business outcomes.","car.now":"Today",
+    "ven.k":"Ventures","ven.title":"Businesses I build.","ven.lead":"The same execution mindset, applied beyond enterprise tech: companies designed to scale.","ven.cap":"Entrepreneur",
+    "ven.tg":"Hospitality · Founder","ven.tgt":"Hospitality","ven.vy":"Technology","ven.vyt":"Tech",
+    "fr.k":"Other fronts","fr.title":"Where else I work.","fr.1":"Entrepreneur","fr.4":"Investor",
+    "ct.k":"Contact","ct.title":"Let’s<br>build<br><span>together.</span>","ct.li":"Connect","ct.topic":"Topic",
+    "ct.name":"Name","ct.company":"Company","ct.msg":"Message","ct.msgph":"Briefly share the context.","ct.send":"Send via WhatsApp","ct.hint":"Your message opens ready to send on WhatsApp.",
+    "foot.by":"Built by","dock.book":"Book","dock.save":"Save",
+    "wa.hi":"Hi Rodrigo! I found you through your website.","wa.topic":"Topic","wa.name":"Name","wa.company":"Company",
+    "meta.title":"Rodrigo Cid — Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group",
+    "vc.title":"Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group"
+  },
+  es:{
+    "nav.philo":"Filosofía","nav.career":"Trayectoria","nav.ventures":"Negocios","nav.fronts":"Frentes","nav.contact":"Contacto",
+    "cta.save":"Guardar contacto","cta.book":"Agendar reunión",
+    "hero.role2":"Emprendedor · Twins Group","hero.quote":'Entre la tecnología y el emprendimiento existe la <em class="x">ejecución</em>. <em>Es ahí donde construyo negocios.</em>',
+    "hero.tag":"Presencia","hero.tagv":"20+ países en las Américas","hero.scroll":"Desliza",
+    "pos.ai":"Inteligencia Artificial","pos.auto":"Automatización Empresarial","pos.ent":"Emprendimiento",
+    "num.1":"años en tecnología corporativa","num.2":"países en las Américas","num.3":"en contratos Enterprise negociados",
+    "num.4":'Fundador de <strong style="font-weight:500">Twins Group Hospitality</strong>',
+    "num.5":"Socio estratégico <span>de algunas de las mayores empresas de América Latina</span>",
+    "philo.k":"Filosofía","philo.title":"Mi filosofía.","philo.note":"Cinco principios que guían cómo construyo empresas, alianzas y tecnología.",
+    "ph.1":"La tecnología debe generar <b>resultados de negocio</b>, no solo automatización.",
+    "ph.2":"La <b>ejecución</b> vence a las ideas.",
+    "ph.3":"La IA no reemplazará a los emprendedores. <b>Los amplificará.</b>",
+    "ph.4":"Las grandes alianzas generan <b>crecimiento exponencial.</b>",
+    "ph.5":"Los negocios deben diseñarse para <b>escalar sin depender de las personas.</b>",
+    "car.k":"Trayectoria","car.title":"Tecnología corporativa.","car.lead":"Más de 15 años en empresas globales de tecnología — conectando IA y automatización con resultados de negocio.","car.now":"Hoy",
+    "ven.k":"Emprendimientos","ven.title":"Negocios que construyo.","ven.lead":"La misma lógica de ejecución, aplicada más allá de la tecnología corporativa: empresas diseñadas para escalar.","ven.cap":"Emprendedor",
+    "ven.tg":"Hospitality · Fundador","ven.tgt":"Hospitalidad","ven.vy":"Tecnología","ven.vyt":"Tech",
+    "fr.k":"Otros frentes","fr.title":"Dónde más actúo.","fr.1":"Emprendedor","fr.4":"Inversionista",
+    "ct.k":"Contacto","ct.title":"Construyamos<br><span>juntos.</span>","ct.li":"Conectemos","ct.topic":"Asunto",
+    "ct.name":"Nombre","ct.company":"Empresa","ct.msg":"Mensaje","ct.msgph":"Cuéntame brevemente el contexto.","ct.send":"Enviar por WhatsApp","ct.hint":"Tu mensaje se abre listo en WhatsApp.",
+    "foot.by":"Desarrollado por","dock.book":"Agendar","dock.save":"Guardar",
+    "wa.hi":"¡Hola, Rodrigo! Llegué a través de tu sitio web.","wa.topic":"Asunto","wa.name":"Nombre","wa.company":"Empresa",
+    "meta.title":"Rodrigo Cid — Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group",
+    "vc.title":"Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group"
+  }
+};
+const TOPICS = {speaking:"Speaking",consulting:"Enterprise Consulting",partnerships:"Strategic Partnerships",business:"Business Opportunities",networking:"Networking"};
+let lang = "pt";
+const store = {get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+
+function applyLang(l){
+  if(!T[l]) l="pt"; lang=l; const d=T[l];
+  document.documentElement.lang = l==="pt"?"pt-BR":l;
+  document.querySelectorAll("[data-i18n]").forEach(el=>{const v=d[el.dataset.i18n]; if(v!=null) el.textContent=v;});
+  document.querySelectorAll("[data-i18n-html]").forEach(el=>{const v=d[el.dataset.i18nHtml]; if(v!=null) el.innerHTML=v;});
+  document.querySelectorAll("[data-i18n-ph]").forEach(el=>{const v=d[el.dataset.i18nPh]; if(v!=null) el.placeholder=v;});
+  document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.lang===l));
+  document.title = d["meta.title"];
+  store.set("rc-lang", l);
+  const u=new URL(location.href); if(l==="pt") u.searchParams.delete("lang"); else u.searchParams.set("lang",l);
+  history.replaceState(null,"",u);
+  waLinks();
+}
+function detectLang(){
+  const q=new URLSearchParams(location.search).get("lang"); if(q&&T[q]) return q;
+  const s=store.get("rc-lang"); if(s&&T[s]) return s;
+  const n=(navigator.language||"pt").slice(0,2).toLowerCase(); return T[n]?n:"pt";
+}
+document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>applyLang(b.dataset.lang)));
+
+/* ---------- links ---------- */
+function waUrl(text){return "https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(text)}
+function waLinks(){document.querySelectorAll("a.js-wa").forEach(a=>a.href=waUrl(T[lang]["wa.hi"]))}
+document.querySelectorAll("a.js-li").forEach(a=>a.href=CONFIG.linkedin);
+document.querySelectorAll("a.js-calendly").forEach(a=>a.href=CONFIG.calendly);
+
+/* ---------- form -> WhatsApp ---------- */
+let topic="speaking";
+document.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>{
+  topic=b.dataset.topic; document.querySelectorAll(".opt").forEach(o=>o.setAttribute("aria-pressed",o===b));
+}));
+document.getElementById("form").addEventListener("submit",e=>{
+  e.preventDefault(); const f=e.target, d=T[lang];
+  const name=f.name.value.trim(), company=f.company.value.trim(), msg=f.msg.value.trim();
+  if(!name){f.name.focus(); f.name.style.borderColor="rgba(255,90,90,.6)"; return;}
+  const lines=[d["wa.hi"],"",`*${d["wa.topic"]}:* ${TOPICS[topic]}`,`*${d["wa.name"]}:* ${name}`];
+  if(company) lines.push(`*${d["wa.company"]}:* ${company}`);
+  if(msg){lines.push("",msg)}
+  window.open(waUrl(lines.join("\n")),"_blank","noopener");
+});
+document.querySelector('#form [name="name"]').addEventListener("input",e=>e.target.style.borderColor="");
+
+/* ---------- vCard ---------- */
+async function vcard(){
+  let photo="";
+  try{
+    const r=await fetch("assets/vcard.jpg"); const b=await r.blob();
+    photo=await new Promise(res=>{const fr=new FileReader(); fr.onload=()=>res(String(fr.result).split(",")[1]); fr.readAsDataURL(b)});
+  }catch(e){}
+  const L=["BEGIN:VCARD","VERSION:3.0","N:Cid;Rodrigo;;;","FN:Rodrigo Cid","ORG:SS&C Blue Prism","TITLE:"+T[lang]["vc.title"]];
+  if(CONFIG.whatsapp && !/^5500+$/.test(CONFIG.whatsapp)) L.push("TEL;TYPE=CELL:+"+CONFIG.whatsapp);
+  if(CONFIG.email) L.push("EMAIL;TYPE=WORK:"+CONFIG.email);
+  L.push("URL:"+CONFIG.site, "X-SOCIALPROFILE;TYPE=linkedin:"+CONFIG.linkedin);
+  if(photo){L.push("PHOTO;ENCODING=b;TYPE=JPEG:"+photo)}
+  L.push("END:VCARD");
+  const blob=new Blob([L.join("\r\n")],{type:"text/vcard;charset=utf-8"});
+  const url=URL.createObjectURL(blob); const a=document.createElement("a");
+  a.href=url; a.download="Rodrigo-Cid.vcf"; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),4000);
+}
+document.querySelectorAll(".js-vcard").forEach(b=>b.addEventListener("click",vcard));
+
+/* ---------- nav state ---------- */
+const nav=document.getElementById("nav"), dock=document.getElementById("dock"), papers=[...document.querySelectorAll(".paper")];
+function onScroll(){
+  const y=scrollY; nav.classList.toggle("is-solid", y>24);
+  const onPaper=papers.some(p=>{const r=p.getBoundingClientRect(); return r.top<=32 && r.bottom>=32});
+  nav.classList.toggle("on-paper", onPaper);
+  dock.classList.toggle("show", y>innerHeight*.6);
+}
+addEventListener("scroll",onScroll,{passive:true}); onScroll();
+
+/* ---------- reveal ---------- */
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in"); io.unobserve(e.target)}}),{rootMargin:"0px 0px -8% 0px",threshold:.08});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+requestAnimationFrame(()=>document.querySelectorAll(".hero .rv").forEach(el=>el.classList.add("in")));
+
+/* ---------- philosophy focus ---------- */
+const items=[...document.querySelectorAll(".philo__item")];
+if(reduce){items.forEach(i=>i.classList.add("is-on"))}
+else{
+  const focus=()=>{
+    const mid=innerHeight*.52; let best=null, bd=1e9;
+    items.forEach(i=>{const r=i.getBoundingClientRect(); const c=r.top+r.height/2; const d=Math.abs(c-mid); if(d<bd){bd=d;best=i}
+      if(r.bottom<mid-innerHeight*.05) i.classList.add("is-on");});
+    items.forEach(i=>{const r=i.getBoundingClientRect(); if(r.top>mid) i.classList.remove("is-on")});
+    if(best && bd<innerHeight*.5) best.classList.add("is-on");
+  };
+  addEventListener("scroll",focus,{passive:true}); focus();
+}
+
+/* ---------- count up ---------- */
+const cio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting) return; const el=e.target, to=+el.dataset.to; cio.unobserve(el);
+  if(reduce){el.textContent=to;return}
+  const t0=performance.now(), dur=1400;
+  const tick=t=>{const p=Math.min(1,(t-t0)/dur); el.textContent=Math.round(to*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(tick)};
+  el.textContent="0"; requestAnimationFrame(tick);
+}),{threshold:.6});
+document.querySelectorAll(".js-count").forEach(el=>cio.observe(el));
+
+document.getElementById("y").textContent=new Date().getFullYear();
+applyLang(detectLang());
+</script>
+</body>
+</html>
