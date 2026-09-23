@@ -510,6 +510,15 @@ button.alt{text-align:left;width:100%}
 .philo__t{max-width:26ch}
 .front__top{justify-content:flex-start}
 .talk__k{color:var(--blue)}
+
+/* ===== v5: fotos de palco ===== */
+.stage{margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stage__ph{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/3;background:#e6e6e8}
+.stage__ph img{width:100%;height:100%;object-fit:cover;transform:scale(1.02);transition:transform 1.2s var(--ease)}
+.stage__ph:first-child img{object-position:50% 22%}
+.stage__ph:last-child img{object-position:50% 12%}
+.stage__ph:hover img{transform:scale(1.06)}
+@media (max-width:860px){.stage{grid-template-columns:1fr}.stage__ph{aspect-ratio:3/2}}
 </style>
 </head>
 <body>
@@ -766,6 +775,10 @@ button.alt{text-align:left;width:100%}
       <article class="talk rv" data-d="1"><span class="talk__k"><span data-i18n="tk.tag">Tema</span></span><h3 data-i18n="tk.2t">Automação Empresarial e Agentic AI</h3><p data-i18n="tk.2p">Agentes, orquestração e governança: o que muda quando a automação passa a decidir.</p></article>
       <article class="talk rv" data-d="2"><span class="talk__k"><span data-i18n="tk.tag">Tema</span></span><h3 data-i18n="tk.3t">Estratégias de crescimento na América Latina</h3><p data-i18n="tk.3p">Ecossistemas de parceiros, expansão de mercado e go-to-market na região.</p></article>
       <article class="talk rv" data-d="3"><span class="talk__k"><span data-i18n="tk.tag">Tema</span></span><h3 data-i18n="tk.4t">Empreendedorismo e construção de negócios</h3><p data-i18n="tk.4p">Da ideia à operação: execução, processos e negócios desenhados para escalar.</p></article>
+    </div>
+    <div class="stage">
+      <figure class="stage__ph rv"><img src="assets/rodrigo-cid-palco.webp" width="1024" height="1536" alt="Rodrigo Cid palestrando" loading="lazy"></figure>
+      <figure class="stage__ph rv" data-d="1"><img src="assets/rodrigo-cid-live.webp" width="1122" height="1402" alt="Rodrigo Cid no SS&amp;C Blue Prism LIVE" loading="lazy"></figure>
     </div>
     <div class="talks__foot rv">
       <div class="formats"><span class="formats__k" data-i18n="tk.f">Formatos</span><span data-i18n="tk.f1">Keynote</span><span data-i18n="tk.f2">Painel executivo</span><span data-i18n="tk.f3">Workshop</span><span data-i18n="tk.f4">Podcast &amp; entrevistas</span></div>
