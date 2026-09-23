@@ -96,7 +96,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:stretch;overflow:hidden;isolation:isolate}
 .hero__bg{position:absolute;inset:0;z-index:-1;pointer-events:none}
 .hero__grid{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 70% 60% at 68% 45%,#000 10%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 70% 60% at 68% 45%,#000 10%,transparent 75%);opacity:.55}
-.hero__glow{position:absolute;width:1100px;height:1100px;right:-260px;top:50%;transform:translateY(-50%);background:radial-gradient(circle,rgba(31,111,229,.38) 0%,rgba(31,111,229,.12) 32%,transparent 62%);filter:blur(10px)}
+.hero__glow{position:absolute;width:1100px;height:1100px;right:-260px;top:50%;transform:translateY(-50%);background:radial-gradient(circle,rgba(31,111,229,.38) 0%,rgba(31,111,229,.12) 32%,transparent 62%)}
 .hero__beam{position:absolute;top:-10%;bottom:-10%;right:30%;width:1px;background:linear-gradient(to bottom,transparent,rgba(75,143,255,.55),transparent);opacity:.5;transform:rotate(14deg);transform-origin:center}
 .hero__in{position:relative;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);align-items:end;gap:24px;width:100%;padding-top:112px}
 .hero__copy{padding-bottom:clamp(56px,9vh,110px);position:relative;z-index:2}
@@ -501,6 +501,15 @@ button.alt{text-align:left;width:100%}
 .tl__left{display:flex;flex-direction:column;gap:12px}
 .tl__r{grid-column:auto;margin-top:0}
 .tl__p{grid-column:auto;grid-row:auto}
+
+.hero__glow{will-change:auto}
+.nav.is-solid{backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px)}
+
+/* ===== v4: sem numeração ===== */
+.philo__item{grid-template-columns:1fr}
+.philo__t{max-width:26ch}
+.front__top{justify-content:flex-start}
+.talk__k{color:var(--blue)}
 </style>
 </head>
 <body>
@@ -593,7 +602,7 @@ button.alt{text-align:left;width:100%}
         <figcaption><b>Rodrigo Cid</b><span data-i18n="pro.cap">Executivo &amp; empreendedor</span></figcaption>
       </figure>
       <div class="profile__txt">
-        <div class="label rv"><b>01</b><span data-i18n="pro.k">Perfil</span></div>
+        <div class="label rv"><span data-i18n="pro.k">Perfil</span></div>
         <h2 class="sec__title rv" data-d="1" data-i18n="pro.title">Tecnologia, parcerias e negócios próprios.</h2>
         <div class="prose">
           <p class="rv" data-d="2" data-i18n-html="pro.p1">São mais de 15 anos dentro da tecnologia corporativa, passando por <strong>Hewlett-Packard, Apple, Tableau e SS&C Blue Prism</strong>. Nesse percurso atuei em mais de 20 países das Américas e negociei mais de US$ 10 milhões em contratos Enterprise.</p>
@@ -611,7 +620,7 @@ button.alt{text-align:left;width:100%}
   <div class="wrap">
     <div class="ssc__head">
       <div>
-        <div class="label rv"><b>02</b><span data-i18n="ssc.k">SS&amp;C Blue Prism</span></div>
+        <div class="label rv"><span data-i18n="ssc.k">SS&amp;C Blue Prism</span></div>
         <h2 class="sec__title rv" data-d="1" data-i18n="ssc.title">A estrutura global por trás do meu trabalho.</h2>
       </div>
       <p class="sec__lead rv" data-d="2" data-i18n="ssc.lead">A SS&amp;C Technologies, fundada em 1986, é uma das maiores fornecedoras de software e serviços para os setores financeiro e de saúde. A Blue Prism, criada em 2001 no Reino Unido, popularizou o conceito de RPA e levou a automação para dentro das grandes corporações. Desde 2022, as duas operam juntas como SS&amp;C Blue Prism.</p>
@@ -645,16 +654,16 @@ button.alt{text-align:left;width:100%}
   <div class="wrap pad">
     <div class="ssc__head">
       <div>
-        <div class="label rv"><b>03</b><span data-i18n="wk.k">Atuação</span></div>
+        <div class="label rv"><span data-i18n="wk.k">Atuação</span></div>
         <h2 class="sec__title rv" data-d="1" data-i18n="wk.title">Onde a tecnologia vira resultado.</h2>
       </div>
       <p class="sec__lead rv" data-d="2" data-i18n="wk.lead">Criar automações e agentes nunca foi tão simples. O desafio agora é fazer isso gerar receita, eficiência e escala — com governança.</p>
     </div>
     <div class="pillars">
-      <article class="pillar rv"><span class="pillar__n">01</span><span class="pillar__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6.3 6.3l2.8 2.8M14.9 14.9l2.8 2.8M6.3 17.7l2.8-2.8M14.9 9.1l2.8-2.8"/></svg></span><h3 data-i18n="wk.1t">Inteligência Artificial aplicada</h3><p data-i18n="wk.1p">IA e agentes conectados a processos reais, com métricas de negócio desde o primeiro dia. Menos piloto, mais operação.</p></article>
-      <article class="pillar rv" data-d="1"><span class="pillar__n">02</span><span class="pillar__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/><path d="M6.5 10v4a3 3 0 0 0 3 3H14M17.5 14v-4a3 3 0 0 0-3-3H10"/></svg></span><h3 data-i18n="wk.2t">Automação Empresarial</h3><p data-i18n="wk.2p">Automação em escala Enterprise: processos redesenhados, digital workers e orquestração com segurança, controle e auditoria.</p></article>
-      <article class="pillar rv" data-d="2"><span class="pillar__n">03</span><span class="pillar__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M10.8 7.2 6.2 15.8M13.2 7.2l4.6 8.6M7.5 18h9"/></svg></span><h3 data-i18n="wk.3t">Ecossistemas de parceiros</h3><p data-i18n="wk.3p">Parcerias estratégicas que multiplicam alcance: go-to-market conjunto, capacitação e co-venda em toda a América Latina.</p></article>
-      <article class="pillar rv" data-d="3"><span class="pillar__n">04</span><span class="pillar__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span><h3 data-i18n="wk.4t">Empreendedorismo e escala</h3><p data-i18n="wk.4p">Negócios desenhados para crescer sem depender de pessoas-chave: processos, tecnologia e gestão orientados a escala.</p></article>
+      <article class="pillar rv"><span class="pillar__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6.3 6.3l2.8 2.8M14.9 14.9l2.8 2.8M6.3 17.7l2.8-2.8M14.9 9.1l2.8-2.8"/></svg></span><h3 data-i18n="wk.1t">Inteligência Artificial aplicada</h3><p data-i18n="wk.1p">IA e agentes conectados a processos reais, com métricas de negócio desde o primeiro dia. Menos piloto, mais operação.</p></article>
+      <article class="pillar rv" data-d="1"><span class="pillar__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/><path d="M6.5 10v4a3 3 0 0 0 3 3H14M17.5 14v-4a3 3 0 0 0-3-3H10"/></svg></span><h3 data-i18n="wk.2t">Automação Empresarial</h3><p data-i18n="wk.2p">Automação em escala Enterprise: processos redesenhados, digital workers e orquestração com segurança, controle e auditoria.</p></article>
+      <article class="pillar rv" data-d="2"><span class="pillar__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M10.8 7.2 6.2 15.8M13.2 7.2l4.6 8.6M7.5 18h9"/></svg></span><h3 data-i18n="wk.3t">Ecossistemas de parceiros</h3><p data-i18n="wk.3p">Parcerias estratégicas que multiplicam alcance: go-to-market conjunto, capacitação e co-venda em toda a América Latina.</p></article>
+      <article class="pillar rv" data-d="3"><span class="pillar__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span><h3 data-i18n="wk.4t">Empreendedorismo e escala</h3><p data-i18n="wk.4p">Negócios desenhados para crescer sem depender de pessoas-chave: processos, tecnologia e gestão orientados a escala.</p></article>
     </div>
   </div>
 </section>
@@ -664,7 +673,7 @@ button.alt{text-align:left;width:100%}
   <div class="wrap">
     <div class="career__top">
       <div>
-        <div class="label rv"><b>04</b><span data-i18n="car.k">Trajetória</span></div>
+        <div class="label rv"><span data-i18n="car.k">Trajetória</span></div>
         <h2 class="sec__title rv" data-d="1" data-i18n="car.title">Minha jornada.</h2>
         <p class="sec__lead rv" data-d="2" data-i18n="car.lead">Mais de 15 anos em empresas globais de tecnologia — de análise de negócios e finanças a dados, IA e automação empresarial.</p>
       </div>
@@ -700,17 +709,17 @@ button.alt{text-align:left;width:100%}
   <div class="wrap philo">
     <div class="philo__head">
       <div>
-        <div class="label rv"><b>05</b><span data-i18n="philo.k">Filosofia</span></div>
+        <div class="label rv"><span data-i18n="philo.k">Filosofia</span></div>
         <h2 class="philo__title rv" data-d="1" data-i18n="philo.title">Minha filosofia.</h2>
       </div>
       <p class="philo__note rv" data-d="2" data-i18n="philo.note">Cinco princípios que guiam como construo empresas, parcerias e tecnologia.</p>
     </div>
     <ol class="philo__list" id="philo">
-      <li class="philo__item"><span class="philo__n">01</span><p class="philo__t" data-i18n-html="ph.1">Tecnologia deve gerar <b>resultado de negócio</b>, não apenas automação.</p></li>
-      <li class="philo__item"><span class="philo__n">02</span><p class="philo__t" data-i18n-html="ph.2"><b>Execução</b> vence ideias.</p></li>
-      <li class="philo__item"><span class="philo__n">03</span><p class="philo__t" data-i18n-html="ph.3">A IA não vai substituir empreendedores. <b>Vai amplificá-los.</b></p></li>
-      <li class="philo__item"><span class="philo__n">04</span><p class="philo__t" data-i18n-html="ph.4">Grandes parcerias geram <b>crescimento exponencial.</b></p></li>
-      <li class="philo__item"><span class="philo__n">05</span><p class="philo__t" data-i18n-html="ph.5">Negócios devem ser desenhados para <b>escalar sem depender de pessoas.</b></p></li>
+      <li class="philo__item"><p class="philo__t" data-i18n-html="ph.1">Tecnologia deve gerar <b>resultado de negócio</b>, não apenas automação.</p></li>
+      <li class="philo__item"><p class="philo__t" data-i18n-html="ph.2"><b>Execução</b> vence ideias.</p></li>
+      <li class="philo__item"><p class="philo__t" data-i18n-html="ph.3">A IA não vai substituir empreendedores. <b>Vai amplificá-los.</b></p></li>
+      <li class="philo__item"><p class="philo__t" data-i18n-html="ph.4">Grandes parcerias geram <b>crescimento exponencial.</b></p></li>
+      <li class="philo__item"><p class="philo__t" data-i18n-html="ph.5">Negócios devem ser desenhados para <b>escalar sem depender de pessoas.</b></p></li>
     </ol>
   </div>
 </section>
@@ -720,7 +729,7 @@ button.alt{text-align:left;width:100%}
   <div class="wrap">
     <div class="ssc__head">
       <div>
-        <div class="label rv"><b>06</b><span data-i18n="ven.k">Empreendimentos</span></div>
+        <div class="label rv"><span data-i18n="ven.k">Empreendimentos</span></div>
         <h2 class="sec__title rv" data-d="1" data-i18n="ven.title">Negócios que construo.</h2>
       </div>
       <p class="sec__lead rv" data-d="2" data-i18n="ven.lead">A mesma lógica de execução, aplicada fora da tecnologia corporativa: empresas desenhadas para escalar.</p>
@@ -747,16 +756,16 @@ button.alt{text-align:left;width:100%}
   <div class="wrap pad">
     <div class="ssc__head">
       <div>
-        <div class="label rv"><b>07</b><span data-i18n="tk.k">Palestras</span></div>
+        <div class="label rv"><span data-i18n="tk.k">Palestras</span></div>
         <h2 class="sec__title rv" data-d="1" data-i18n="tk.title">Speaking.</h2>
       </div>
       <p class="sec__lead rv" data-d="2" data-i18n="tk.lead">Levo para palcos, comitês executivos e eventos uma visão prática sobre IA, automação, parcerias e empreendedorismo — sem hype, com foco em execução.</p>
     </div>
     <div class="talks">
-      <article class="talk rv"><span class="talk__k"><b>01</b><span data-i18n="tk.tag">Tema</span></span><h3 data-i18n="tk.1t">Inteligência Artificial aplicada aos negócios</h3><p data-i18n="tk.1p">Como sair do experimento e conectar IA a processos, métricas e resultado real.</p></article>
-      <article class="talk rv" data-d="1"><span class="talk__k"><b>02</b><span data-i18n="tk.tag">Tema</span></span><h3 data-i18n="tk.2t">Automação Empresarial e Agentic AI</h3><p data-i18n="tk.2p">Agentes, orquestração e governança: o que muda quando a automação passa a decidir.</p></article>
-      <article class="talk rv" data-d="2"><span class="talk__k"><b>03</b><span data-i18n="tk.tag">Tema</span></span><h3 data-i18n="tk.3t">Estratégias de crescimento na América Latina</h3><p data-i18n="tk.3p">Ecossistemas de parceiros, expansão de mercado e go-to-market na região.</p></article>
-      <article class="talk rv" data-d="3"><span class="talk__k"><b>04</b><span data-i18n="tk.tag">Tema</span></span><h3 data-i18n="tk.4t">Empreendedorismo e construção de negócios</h3><p data-i18n="tk.4p">Da ideia à operação: execução, processos e negócios desenhados para escalar.</p></article>
+      <article class="talk rv"><span class="talk__k"><span data-i18n="tk.tag">Tema</span></span><h3 data-i18n="tk.1t">Inteligência Artificial aplicada aos negócios</h3><p data-i18n="tk.1p">Como sair do experimento e conectar IA a processos, métricas e resultado real.</p></article>
+      <article class="talk rv" data-d="1"><span class="talk__k"><span data-i18n="tk.tag">Tema</span></span><h3 data-i18n="tk.2t">Automação Empresarial e Agentic AI</h3><p data-i18n="tk.2p">Agentes, orquestração e governança: o que muda quando a automação passa a decidir.</p></article>
+      <article class="talk rv" data-d="2"><span class="talk__k"><span data-i18n="tk.tag">Tema</span></span><h3 data-i18n="tk.3t">Estratégias de crescimento na América Latina</h3><p data-i18n="tk.3p">Ecossistemas de parceiros, expansão de mercado e go-to-market na região.</p></article>
+      <article class="talk rv" data-d="3"><span class="talk__k"><span data-i18n="tk.tag">Tema</span></span><h3 data-i18n="tk.4t">Empreendedorismo e construção de negócios</h3><p data-i18n="tk.4p">Da ideia à operação: execução, processos e negócios desenhados para escalar.</p></article>
     </div>
     <div class="talks__foot rv">
       <div class="formats"><span class="formats__k" data-i18n="tk.f">Formatos</span><span data-i18n="tk.f1">Keynote</span><span data-i18n="tk.f2">Painel executivo</span><span data-i18n="tk.f3">Workshop</span><span data-i18n="tk.f4">Podcast &amp; entrevistas</span></div>
@@ -768,14 +777,14 @@ button.alt{text-align:left;width:100%}
 <!-- FRONTS -->
 <section class="sec" id="frentes">
   <div class="wrap">
-    <div class="label rv"><b>08</b><span data-i18n="fr.k">Outras frentes</span></div>
+    <div class="label rv"><span data-i18n="fr.k">Outras frentes</span></div>
     <h2 class="sec__title rv" data-d="1" data-i18n="fr.title">Onde mais atuo.</h2>
     <div class="fronts__grid">
-      <article class="front rv"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09Z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2Z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span><small>01</small></div><div><h3 data-i18n="fr.1">Empreendedor</h3><p data-i18n="fr.1p">Fundador do Twins Group e da VYBR Tech, em Austin, Texas.</p></div></article>
-      <article class="front rv" data-d="1"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5M8 22h8"/></svg></span><small>02</small></div><div><h3>Speaker</h3><p data-i18n="fr.2p">Palestras e painéis sobre IA, automação, parcerias e empreendedorismo.</p></div></article>
-      <article class="front rv" data-d="2"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z"/></svg></span><small>03</small></div><div><h3>Business Advisor</h3><p data-i18n="fr.3p">Advisor de empresas de tecnologia, IA, automação e SaaS — estratégia comercial, crescimento e expansão de mercado.</p></div></article>
-      <article class="front rv" data-d="3"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span><small>04</small></div><div><h3 data-i18n="fr.4">Investidor</h3><p data-i18n="fr.4p">Investimento em tecnologia, hospitalidade e negócios em estágio inicial.</p></div></article>
-      <article class="front rv" data-d="4"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-4a3 3 0 0 1 6 0v4M9 10h.01M15 10h.01"/></svg></span><small>05</small></div><div><h3>Hospitality Operator</h3><p data-i18n="fr.5p">Operação de hospitalidade com foco em experiência, eficiência e processos.</p></div></article>
+      <article class="front rv"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09Z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2Z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span></div><div><h3 data-i18n="fr.1">Empreendedor</h3><p data-i18n="fr.1p">Fundador do Twins Group e da VYBR Tech, em Austin, Texas.</p></div></article>
+      <article class="front rv" data-d="1"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5M8 22h8"/></svg></span></div><div><h3>Speaker</h3><p data-i18n="fr.2p">Palestras e painéis sobre IA, automação, parcerias e empreendedorismo.</p></div></article>
+      <article class="front rv" data-d="2"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z"/></svg></span></div><div><h3>Business Advisor</h3><p data-i18n="fr.3p">Advisor de empresas de tecnologia, IA, automação e SaaS — estratégia comercial, crescimento e expansão de mercado.</p></div></article>
+      <article class="front rv" data-d="3"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span></div><div><h3 data-i18n="fr.4">Investidor</h3><p data-i18n="fr.4p">Investimento em tecnologia, hospitalidade e negócios em estágio inicial.</p></div></article>
+      <article class="front rv" data-d="4"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-4a3 3 0 0 1 6 0v4M9 10h.01M15 10h.01"/></svg></span></div><div><h3>Hospitality Operator</h3><p data-i18n="fr.5p">Operação de hospitalidade com foco em experiência, eficiência e processos.</p></div></article>
     </div>
   </div>
 </section>
@@ -797,7 +806,7 @@ button.alt{text-align:left;width:100%}
 <section class="sec contact" id="contato">
   <div class="wrap contact__grid">
     <div>
-      <div class="label rv"><b>09</b><span data-i18n="ct.k">Contato</span></div>
+      <div class="label rv"><span data-i18n="ct.k">Contato</span></div>
       <h2 class="contact__title rv" data-d="1" data-i18n-html="ct.title">Vamos<br>construir<br><span>juntos.</span></h2>
       <p class="sec__lead rv" data-d="2" data-i18n="ct.lead">Speaking, consultoria Enterprise, parcerias estratégicas, oportunidades de negócio ou networking — me conte o contexto e eu retorno.</p>
       <div class="contact__alt">
