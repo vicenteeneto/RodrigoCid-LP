@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Rodrigo Cid — Partner Manager LATAM | SS&amp;C Blue Prism · Entrepreneur | Twins Group</title>
-<meta name="description" content="Rodrigo Cid — Partner Manager LATAM na SS&amp;C Blue Prism e empreendedor à frente do Twins Group. Inteligência Artificial, Automação Empresarial e Empreendedorismo.">
+<meta name="description" content="Rodrigo Cid — Partner Manager LATAM na SS&amp;C Blue Prism, fundador do Twins Group e da VYBR Tech, em Austin, Texas. Inteligência Artificial, Automação Empresarial e Empreendedorismo.">
 <meta name="theme-color" content="#000000">
 <link rel="canonical" href="https://rodrigocid.com/">
 <meta property="og:type" content="profile">
@@ -20,7 +20,7 @@
 <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" href="assets/rodrigo-cid.webp" fetchpriority="high">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Rodrigo Cid","jobTitle":"Partner Manager LATAM","worksFor":{"@type":"Organization","name":"SS&C Blue Prism"},"url":"https://rodrigocid.com/","image":"https://rodrigocid.com/assets/rodrigo-cid.webp","knowsAbout":["Artificial Intelligence","Enterprise Automation","Entrepreneurship"]}
+{"@context":"https://schema.org","@type":"Person","name":"Rodrigo Cid","jobTitle":"Partner Manager LATAM","worksFor":{"@type":"Organization","name":"SS&C Blue Prism"},"url":"https://rodrigocid.com/","image":"https://rodrigocid.com/assets/rodrigo-cid.webp","email":"rodrigo.cid@sscinc.com","telephone":"+1-512-590-9661","address":{"@type":"PostalAddress","addressLocality":"Austin","addressRegion":"TX","addressCountry":"US"},"sameAs":["https://www.linkedin.com/in/rodrigocid10"],"knowsAbout":["Artificial Intelligence","Enterprise Automation","Entrepreneurship","Hospitality"]}
 </script>
 <script>document.documentElement.classList.add('js')</script>
 <style>
@@ -323,22 +323,198 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .hero__cta .btn{flex:1 1 auto}
   .hero__cta .btn--primary{flex-basis:100%}
 }
+
+/* ===== v2 additions ===== */
+.pad{padding-top:clamp(100px,15vh,170px);padding-bottom:clamp(100px,15vh,170px)}
+.hero__lead{margin-top:18px;max-width:500px;color:var(--fg-3);font-size:16px;line-height:1.55}
+.fact p strong{font-weight:500}
+.btn--dark{background:var(--paper-ink);color:#fff}
+.btn--dark:hover{background:#222;transform:translateY(-1px)}
+.err{border-color:rgba(255,90,90,.6)!important}
+
+/* point of view */
+.pov{border-top:1px solid var(--line);position:relative;overflow:hidden}
+.pov::before{content:"";position:absolute;left:-200px;bottom:-400px;width:900px;height:700px;background:radial-gradient(ellipse,rgba(31,111,229,.16),transparent 65%);pointer-events:none}
+.pov__in{position:relative;padding-top:clamp(90px,14vh,150px);padding-bottom:clamp(90px,14vh,150px)}
+.pov__t{margin-top:28px;font-size:clamp(34px,4.8vw,72px);line-height:1.04;letter-spacing:-.045em;font-weight:500;max-width:19ch}
+.pov__t span{color:var(--fg-3)}
+.pov__p{margin-top:32px;max-width:560px;color:var(--fg-2);font-size:clamp(17px,1.4vw,19px)}
+
+/* profile */
+.profile{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(36px,6vw,96px);align-items:center}
+.profile__photo{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5;background:#ddd}
+.profile__photo img{width:100%;height:100%;object-fit:cover;object-position:50% 36%;transform:scale(1.04);transition:transform 1.4s var(--ease)}
+.profile__photo:hover img{transform:scale(1.08)}
+.profile__photo figcaption{position:absolute;left:16px;bottom:16px;right:16px;display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 16px;border-radius:14px;background:rgba(255,255,255,.74);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);font-size:13px;color:var(--paper-ink)}
+.profile__photo figcaption b{font-weight:600}
+.prose{margin-top:30px;display:grid;gap:18px;max-width:600px}
+.prose p{color:#424245;font-size:clamp(16.5px,1.3vw,18px);line-height:1.62}
+.prose strong{color:var(--paper-ink);font-weight:600}
+.sig{margin-top:30px;font-size:15px;font-weight:600;letter-spacing:-.01em;display:flex;align-items:center;gap:12px}
+.sig::before{content:"";width:28px;height:1px;background:var(--paper-ink)}
+
+/* ss&c */
+.ssc__head{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,80px);align-items:end}
+.ssc__head .sec__lead{margin-top:0}
+.kpis{margin-top:clamp(56px,9vh,90px);display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.kpi{padding:34px 28px 34px 0;display:flex;flex-direction:column;gap:12px}
+.kpi+.kpi{border-left:1px solid var(--line);padding-left:28px}
+.kpi strong{font-size:clamp(36px,3.8vw,56px);font-weight:500;letter-spacing:-.05em;line-height:1}
+.kpi span{color:var(--fg-2);font-size:14.5px;line-height:1.45;max-width:230px}
+.ssc__cards{margin-top:20px;display:grid;grid-template-columns:1.25fr 1fr;gap:14px}
+.panel{position:relative;border-radius:24px;padding:clamp(26px,3vw,40px);background:var(--graphite);border:1px solid var(--line);display:flex;flex-direction:column;overflow:hidden}
+.panel--hq{background:linear-gradient(155deg,#0f1c33 0%,#0b0c10 55%);border-color:rgba(75,143,255,.22)}
+.panel--hq::before{content:"";position:absolute;right:-160px;top:-180px;width:460px;height:460px;background:radial-gradient(circle,rgba(31,111,229,.42),transparent 65%);pointer-events:none}
+.panel__k{position:relative;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue-hi)}
+.panel__t{position:relative;margin-top:18px;font-size:clamp(28px,2.8vw,40px);font-weight:600;letter-spacing:-.04em;line-height:1.05}
+.panel__p{position:relative;margin-top:16px;color:var(--fg-2);font-size:16px;line-height:1.6;max-width:560px}
+.stack{position:relative;display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.stack span{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-2);padding:7px 11px;border-radius:8px;background:rgba(255,255,255,.04);border:1px solid var(--line)}
+.panel__a{position:relative;margin-top:auto;padding-top:30px;display:inline-flex;align-items:center;gap:8px;font-size:14.5px;font-weight:500;color:var(--fg)}
+.panel__a svg{width:15px;height:15px;transition:transform .25s}
+.panel__a:hover svg{transform:translate(3px,-3px)}
+
+/* pillars */
+.pillars{margin-top:clamp(56px,9vh,90px);display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.pillar{position:relative;border-radius:22px;padding:28px 24px 30px;background:#fff;border:1px solid rgba(0,0,0,.06);min-height:300px;display:flex;flex-direction:column;transition:transform .35s var(--ease),box-shadow .35s}
+.pillar:hover{transform:translateY(-3px);box-shadow:0 22px 44px -24px rgba(0,0,0,.22)}
+.pillar__n{position:absolute;top:26px;right:24px;font-family:var(--mono);font-size:11px;color:var(--paper-2)}
+.pillar__ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--paper-ink);color:#fff}
+.pillar:nth-child(odd) .pillar__ic{background:var(--blue)}
+.pillar__ic svg{width:21px;height:21px}
+.pillar h3{margin-top:auto;padding-top:40px;font-size:22px;font-weight:600;letter-spacing:-.03em;line-height:1.12;color:var(--paper-ink)}
+.pillar p{margin-top:10px;color:#515154;font-size:15px;line-height:1.55}
+
+/* career descriptors */
+.logo{height:auto;min-height:170px}
+.logo p{margin-top:8px;font-size:12.5px;color:var(--fg-3);line-height:1.4}
+
+/* ventures (dark) */
+.vgrid{margin-top:clamp(56px,9vh,90px);display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.vcard{position:relative;border-radius:26px;padding:clamp(28px,3.2vw,44px);background:var(--graphite);border:1px solid var(--line);min-height:380px;display:flex;flex-direction:column;overflow:hidden;transition:border-color .35s,transform .35s var(--ease)}
+.vcard:hover{transform:translateY(-3px);border-color:var(--line-2)}
+.vcard::after{content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;background:radial-gradient(circle,rgba(255,255,255,.06),transparent 65%)}
+.vcard--blue::after{background:radial-gradient(circle,rgba(31,111,229,.32),transparent 65%)}
+.vcard__top{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1}
+.vcard__mk{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;background:var(--fg);color:var(--black);font-family:var(--mono);font-size:15px;font-weight:500}
+.vcard--blue .vcard__mk{background:var(--blue);color:#fff}
+.vcard__role{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-2);border:1px solid var(--line-2);padding:7px 11px;border-radius:999px}
+.vcard h3{position:relative;z-index:1;margin-top:auto;padding-top:60px;font-size:clamp(34px,3.6vw,52px);font-weight:600;letter-spacing:-.05em;line-height:1}
+.vcard__s{position:relative;z-index:1;margin-top:8px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue-hi)}
+.vcard__p{position:relative;z-index:1;margin-top:18px;color:var(--fg-2);font-size:16px;line-height:1.6;max-width:480px}
+
+/* talks */
+.talks{margin-top:clamp(56px,9vh,90px);display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.talk{border-radius:22px;padding:30px 30px 32px;background:#fff;border:1px solid rgba(0,0,0,.06);transition:transform .35s var(--ease),box-shadow .35s}
+.talk:hover{transform:translateY(-3px);box-shadow:0 22px 44px -24px rgba(0,0,0,.22)}
+.talk__k{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--paper-2)}
+.talk__k b{color:var(--blue);font-weight:500}
+.talk h3{margin-top:22px;font-size:clamp(22px,2vw,28px);font-weight:600;letter-spacing:-.035em;line-height:1.12;color:var(--paper-ink);max-width:22ch}
+.talk p{margin-top:12px;color:#515154;font-size:15.5px;line-height:1.55;max-width:460px}
+.talks__foot{margin-top:28px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.formats{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.formats span{font-size:13.5px;color:#424245;padding:8px 14px;border-radius:999px;border:1px solid rgba(0,0,0,.12)}
+.formats .formats__k{border:0;padding-left:0;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--paper-2)}
+
+/* fronts with descriptions */
+.front{min-height:280px}
+.front p{position:relative;z-index:1;margin-top:10px;color:var(--fg-3);font-size:14px;line-height:1.5}
+.front > div:last-child{position:relative;z-index:1}
+
+/* contact extras */
+.contact .sec__lead{margin-top:26px;max-width:440px}
+.opt-desc{margin:-12px 0 24px;min-height:1.4em;color:var(--fg-2);font-size:14px}
+.alt[hidden]{display:none}
+button.alt{text-align:left;width:100%}
+.foot__tag{font-size:clamp(34px,6vw,84px);font-weight:600;letter-spacing:-.055em;line-height:1;color:var(--graphite-2);margin:10px 0 36px;-webkit-text-stroke:0}
+.foot{padding-top:60px}
+
+@media (max-width:1080px){
+  .pillars{grid-template-columns:1fr 1fr}
+  .kpis{grid-template-columns:1fr 1fr}
+  .kpi:nth-child(3){border-left:0;padding-left:0}
+  .kpi:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .logo{min-height:150px}
+}
+@media (max-width:860px){
+  .profile,.ssc__head,.ssc__cards,.vgrid,.talks{grid-template-columns:1fr}
+  .profile__photo{max-height:560px}
+  .vcard{min-height:320px}
+  .talks__foot{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:640px){
+  .pillars{grid-template-columns:1fr}
+  .pillar{min-height:230px}
+  .kpi,.kpi+.kpi{padding:26px 16px 26px 0}
+  .kpi:nth-child(even){padding-left:16px}
+  .kpi strong{font-size:34px}
+  .kpi span{font-size:13px}
+  .front{min-height:0}
+  .front > div:last-child{margin-top:34px}
+  .fronts__grid{grid-template-columns:1fr}
+  .front:last-child{grid-column:auto}
+  .talk{padding:24px}
+}
+.front{justify-content:flex-start}
+.front > div:last-child{margin-top:64px}
+
+/* ===== v3 ===== */
+.hero__loc{color:var(--fg-3)!important;gap:7px!important}
+.hero__loc svg{width:13px;height:13px;flex:none;opacity:.8}
+.hero__eyebrow{gap:7px}
+
+/* timeline */
+.tl{margin-top:clamp(56px,9vh,90px);border-top:1px solid var(--line)}
+.tl__item{padding:clamp(28px,4vh,40px) 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.4fr);gap:clamp(20px,5vw,72px);align-items:start;transition:background .35s}
+.tl__item:hover{background:rgba(255,255,255,.02)}
+.tl__head{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.tl__head h3{font-size:clamp(26px,2.6vw,38px);font-weight:600;letter-spacing:-.04em;line-height:1.05}
+.tl__head h3 em{font-style:normal;font-weight:400;color:var(--fg-3)}
+.tl__now{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue-hi);border:1px solid rgba(75,143,255,.35);padding:5px 9px;border-radius:999px}
+.tl__r{grid-column:1;margin-top:10px;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-3);line-height:1.6}
+.tl__p{grid-column:2;grid-row:1/3;color:var(--fg-2);font-size:16px;line-height:1.62;max-width:620px}
+
+/* venture units */
+.units{position:relative;z-index:1;display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:26px}
+.units span{font-size:13px;color:var(--fg);padding:7px 12px;border-radius:999px;border:1px solid var(--line-2);background:rgba(255,255,255,.03)}
+.units .units__k{border:0;padding:0 4px 0 0;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-3)}
+
+/* social impact */
+.impact{border-top:1px solid var(--line);background:var(--ink)}
+.impact__in{display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,4vw,48px);padding-top:clamp(64px,10vh,110px);padding-bottom:clamp(64px,10vh,110px);align-items:start}
+.impact__ic{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;border:1px solid var(--line-2);color:var(--blue-hi);background:rgba(31,111,229,.08)}
+.impact__ic svg{width:24px;height:24px}
+.impact__t{margin-top:22px;font-size:clamp(28px,3.4vw,46px);font-weight:600;letter-spacing:-.04em;line-height:1.08;max-width:18ch}
+.impact__p{margin-top:20px;color:var(--fg-2);font-size:clamp(16px,1.35vw,18px);line-height:1.62;max-width:720px}
+.impact__p strong{color:var(--fg);font-weight:500}
+.impact__a{margin-top:24px;display:inline-flex;align-items:center;gap:8px;font-size:14.5px;font-weight:500;color:var(--fg)}
+.impact__a svg{width:15px;height:15px;transition:transform .25s}
+.impact__a:hover svg{transform:translate(3px,-3px)}
+
+@media (max-width:860px){
+  .tl__item{grid-template-columns:1fr;gap:12px}
+  .tl__p{grid-column:1;grid-row:auto}
+  .impact__in{grid-template-columns:1fr}
+}
+
+[hidden]{display:none!important}
+.tl__left{display:flex;flex-direction:column;gap:12px}
+.tl__r{grid-column:auto;margin-top:0}
+.tl__p{grid-column:auto;grid-row:auto}
 </style>
 </head>
 <body>
 
-<!-- ============ NAV ============ -->
 <header class="nav" id="nav">
   <div class="wrap nav__in">
-    <a href="#topo" class="brand" aria-label="Rodrigo Cid">
-      <span class="brand__mark">RC</span>
-      <span>Rodrigo Cid</span>
-    </a>
+    <a href="#topo" class="brand" aria-label="Rodrigo Cid"><span class="brand__mark">RC</span><span>Rodrigo Cid</span></a>
     <nav class="nav__links" aria-label="Menu">
-      <a href="#filosofia" data-i18n="nav.philo">Filosofia</a>
+      <a href="#perfil" data-i18n="nav.profile">Perfil</a>
+      <a href="#atuacao" data-i18n="nav.work">Atuação</a>
       <a href="#trajetoria" data-i18n="nav.career">Trajetória</a>
+      <a href="#filosofia" data-i18n="nav.philo">Filosofia</a>
       <a href="#negocios" data-i18n="nav.ventures">Negócios</a>
-      <a href="#frentes" data-i18n="nav.fronts">Frentes</a>
+      <a href="#palestras" data-i18n="nav.talks">Palestras</a>
       <a href="#contato" data-i18n="nav.contact">Contato</a>
     </nav>
     <div class="nav__right">
@@ -353,88 +529,178 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 </header>
 
 <main>
-<!-- ============ HERO ============ -->
+<!-- HERO -->
 <section class="hero" id="topo">
-  <div class="hero__bg" aria-hidden="true">
-    <div class="hero__grid"></div>
-    <div class="hero__glow"></div>
-    <div class="hero__beam"></div>
-  </div>
+  <div class="hero__bg" aria-hidden="true"><div class="hero__grid"></div><div class="hero__glow"></div><div class="hero__beam"></div></div>
   <div class="wrap hero__in">
     <div class="hero__copy">
       <div class="hero__eyebrow rv">
         <span><i></i>Partner Manager LATAM · SS&amp;C Blue Prism</span>
         <span><i></i><span data-i18n="hero.role2">Empreendedor · Twins Group</span></span>
+        <span><i></i><span data-i18n="hero.role3">Founder · VYBR Tech</span></span>
+        <span class="hero__loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg><span data-i18n="hero.loc">Austin, Texas · EUA</span></span>
       </div>
       <h1 class="hero__name rv" data-d="1"><span>Rodrigo</span><span>Cid</span></h1>
       <p class="hero__quote rv" data-d="2" data-i18n-html="hero.quote">Entre tecnologia e empreendedorismo existe <em class="x">execução</em>. <em>É nela que construo negócios.</em></p>
+      <p class="hero__lead rv" data-d="2" data-i18n="hero.lead">Conecto Inteligência Artificial, automação e parcerias estratégicas a resultado de negócio — na América Latina e nos Estados Unidos.</p>
       <div class="chips rv" data-d="3">
-        <span class="chip" data-i18n="pos.ai">Inteligência Artificial</span>
-        <span class="chip" data-i18n="pos.auto">Automação Empresarial</span>
-        <span class="chip" data-i18n="pos.ent">Empreendedorismo</span>
+        <span class="chip" data-i18n="pos.ai">Inteligência Artificial</span><span class="chip" data-i18n="pos.auto">Automação Empresarial</span><span class="chip" data-i18n="pos.ent">Empreendedorismo</span>
       </div>
       <div class="hero__cta rv" data-d="4">
-        <a class="btn btn--primary js-calendly" href="#" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>
-          <span data-i18n="cta.book">Agendar conversa</span>
-        </a>
-        <a class="btn btn--ghost js-wa" href="#" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.76-1.84-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></svg>
-          WhatsApp
-        </a>
-        <a class="btn btn--ghost js-li" href="#" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
-          LinkedIn
-        </a>
+        <a class="btn btn--primary js-calendly" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg><span data-i18n="cta.book">Agendar conversa</span></a>
+        <a class="btn btn--ghost js-wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.76-1.84-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></svg>WhatsApp</a>
+        <a class="btn btn--ghost js-li" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>LinkedIn</a>
       </div>
     </div>
     <figure class="hero__photo rv" data-d="1">
       <div class="hero__ring" aria-hidden="true"></div>
       <img src="assets/rodrigo-cid.webp" width="1100" height="1466" alt="Rodrigo Cid" fetchpriority="high">
-      <div class="hero__tag" aria-hidden="true">
-        <small data-i18n="hero.tag">Atuação</small>
-        <strong data-i18n="hero.tagv">20+ países nas Américas</strong>
-      </div>
+      <div class="hero__tag" aria-hidden="true"><small data-i18n="hero.tag">Atuação</small><strong data-i18n="hero.tagv">20+ países nas Américas</strong></div>
     </figure>
   </div>
 </section>
 
-<!-- ============ NUMBERS ============ -->
+<!-- NUMBERS -->
 <section class="numbers" aria-label="Números">
   <div class="wrap">
     <div class="numbers__grid">
-      <div class="stat rv">
-        <div class="stat__v"><span class="js-count" data-to="15">15</span><sup>+</sup></div>
-        <p class="stat__l" data-i18n="num.1">anos em tecnologia corporativa</p>
-      </div>
-      <div class="stat rv" data-d="1">
-        <div class="stat__v"><span class="js-count" data-to="20">20</span><sup>+</sup></div>
-        <p class="stat__l" data-i18n="num.2">países de atuação nas Américas</p>
-      </div>
-      <div class="stat rv" data-d="2">
-        <div class="stat__v"><small>US$</small><span class="js-count" data-to="10">10</span>M<sup>+</sup></div>
-        <p class="stat__l" data-i18n="num.3">em contratos Enterprise negociados</p>
-      </div>
+      <div class="stat rv"><div class="stat__v"><span class="js-count" data-to="15">15</span><sup>+</sup></div><p class="stat__l" data-i18n="num.1">anos em tecnologia corporativa</p></div>
+      <div class="stat rv" data-d="1"><div class="stat__v"><span class="js-count" data-to="20">20</span><sup>+</sup></div><p class="stat__l" data-i18n="num.2">países de atuação nas Américas</p></div>
+      <div class="stat rv" data-d="2"><div class="stat__v"><small>US$</small><span class="js-count" data-to="10">10</span>M<sup>+</sup></div><p class="stat__l" data-i18n="num.3">em contratos Enterprise negociados</p></div>
     </div>
     <div class="numbers__row">
-      <div class="fact rv">
-        <div class="fact__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6M4 21h16"/></svg></div>
-        <p data-i18n-html="num.4">Fundador do <strong style="font-weight:500">Twins Group Hospitality</strong></p>
-      </div>
-      <div class="fact rv" data-d="1">
-        <div class="fact__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 12 3 3 5-6"/><circle cx="12" cy="12" r="9"/></svg></div>
-        <p data-i18n-html="num.5">Parceiro estratégico <span>de algumas das maiores empresas da América Latina</span></p>
+      <div class="fact rv"><div class="fact__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6M4 21h16"/></svg></div><p data-i18n-html="num.4">Fundador do <strong>Twins Group</strong> e da <strong>VYBR Tech</strong></p></div>
+      <div class="fact rv" data-d="1"><div class="fact__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 12 3 3 5-6"/><circle cx="12" cy="12" r="9"/></svg></div><p data-i18n-html="num.5">Parceiro estratégico <span>de algumas das maiores empresas da América Latina</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- POINT OF VIEW -->
+<section class="pov" aria-label="Ponto de vista">
+  <div class="wrap pov__in">
+    <div class="label rv"><span data-i18n="pov.k">Ponto de vista</span></div>
+    <p class="pov__t rv" data-d="1" data-i18n-html="pov.t">A maioria das empresas não tem um problema de tecnologia. <span>Tem um problema de execução.</span></p>
+    <p class="pov__p rv" data-d="2" data-i18n="pov.p">Ferramentas nunca foram tão acessíveis. O que separa quem captura valor de quem acumula pilotos é a capacidade de transformar tecnologia em operação, parceria e resultado mensurável.</p>
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section class="paper" id="perfil">
+  <div class="wrap pad">
+    <div class="profile">
+      <figure class="profile__photo rv">
+        <img src="assets/rodrigo-cid-lobby.webp" width="752" height="1632" alt="Rodrigo Cid" loading="lazy">
+        <figcaption><b>Rodrigo Cid</b><span data-i18n="pro.cap">Executivo &amp; empreendedor</span></figcaption>
+      </figure>
+      <div class="profile__txt">
+        <div class="label rv"><b>01</b><span data-i18n="pro.k">Perfil</span></div>
+        <h2 class="sec__title rv" data-d="1" data-i18n="pro.title">Tecnologia, parcerias e negócios próprios.</h2>
+        <div class="prose">
+          <p class="rv" data-d="2" data-i18n-html="pro.p1">São mais de 15 anos dentro da tecnologia corporativa, passando por <strong>Hewlett-Packard, Apple, Tableau e SS&C Blue Prism</strong>. Nesse percurso atuei em mais de 20 países das Américas e negociei mais de US$ 10 milhões em contratos Enterprise.</p>
+          <p class="rv" data-d="2" data-i18n-html="pro.p2">Hoje, como <strong>Partner Manager LATAM na SS&C Blue Prism</strong>, lidero estratégias de crescimento para parceiros e clientes na América Latina, conectando Inteligência Artificial, Automação Empresarial e Orquestração à transformação digital de grandes organizações.</p>
+          <p class="rv" data-d="3" data-i18n-html="pro.p3">Em paralelo, construo negócios próprios a partir de Austin, no Texas: fundei o <strong>Twins Group</strong>, grupo de hospitalidade e entretenimento, e a <strong>VYBR Tech</strong>, startup de tecnologia para a indústria do entretenimento. É nessa dupla vivência — executivo de tecnologia e empreendedor — que nasce a minha forma de enxergar negócios: tecnologia só vale quando vira resultado.</p>
+        </div>
+        <p class="sig rv" data-d="3">Rodrigo Cid</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ PHILOSOPHY ============ -->
+<!-- SS&C BLUE PRISM -->
+<section class="sec" id="ssc">
+  <div class="wrap">
+    <div class="ssc__head">
+      <div>
+        <div class="label rv"><b>02</b><span data-i18n="ssc.k">SS&amp;C Blue Prism</span></div>
+        <h2 class="sec__title rv" data-d="1" data-i18n="ssc.title">A estrutura global por trás do meu trabalho.</h2>
+      </div>
+      <p class="sec__lead rv" data-d="2" data-i18n="ssc.lead">A SS&amp;C Technologies, fundada em 1986, é uma das maiores fornecedoras de software e serviços para os setores financeiro e de saúde. A Blue Prism, criada em 2001 no Reino Unido, popularizou o conceito de RPA e levou a automação para dentro das grandes corporações. Desde 2022, as duas operam juntas como SS&amp;C Blue Prism.</p>
+    </div>
+    <div class="kpis">
+      <div class="kpi rv"><strong data-i18n="ssc.v1">29 mil</strong><span data-i18n="ssc.s1">colaboradores no mundo</span></div>
+      <div class="kpi rv" data-d="1"><strong data-i18n="ssc.v2">23 mil+</strong><span data-i18n="ssc.s2">clientes corporativos</span></div>
+      <div class="kpi rv" data-d="2"><strong>7</strong><span data-i18n="ssc.s3">anos consecutivos como Líder no Gartner® Magic Quadrant™ de RPA</span></div>
+      <div class="kpi rv" data-d="3"><strong>2026</strong><span data-i18n="ssc.s4">lançamento do WorkHQ, plataforma de automação agêntica</span></div>
+    </div>
+    <div class="ssc__cards">
+      <article class="panel panel--hq rv">
+        <p class="panel__k" data-i18n="ssc.wk">A plataforma</p>
+        <h3 class="panel__t" data-i18n="ssc.wt">WorkHQ</h3>
+        <p class="panel__p" data-i18n="ssc.wp">Lançado em abril de 2026, o WorkHQ reúne agentes de IA, digital workers, APIs e pessoas em um único ambiente governado — com orquestração, segurança, auditoria e supervisão humana. É a resposta para a pergunta que vem depois do primeiro piloto: quem está no comando quando são mil agentes, e não um?</p>
+        <div class="stack" aria-hidden="true"><span>AI Agents</span><span>Digital Workers</span><span>APIs</span><span>LLMs / AI Gateway</span><span>Governance</span><span>People</span></div>
+        <a class="panel__a" href="https://www.blueprism.com/platform/" target="_blank" rel="noopener"><span data-i18n="ssc.wl">Conhecer o WorkHQ</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </article>
+      <article class="panel rv" data-d="1">
+        <p class="panel__k" data-i18n="ssc.rk">Meu papel</p>
+        <h3 class="panel__t" data-i18n="ssc.rt">Partner Manager LATAM</h3>
+        <p class="panel__p" data-i18n="ssc.rp">Desenvolvo o ecossistema de parceiros da SS&amp;C Blue Prism na América Latina: consultorias, integradores e empresas de tecnologia que levam IA e automação Enterprise aos seus clientes — com go-to-market conjunto, capacitação e co-venda.</p>
+        <a class="panel__a" href="#contato" data-topic-link="partnerships"><span data-i18n="cta.talk">Falar sobre parcerias</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WORK / PILLARS -->
+<section class="paper" id="atuacao">
+  <div class="wrap pad">
+    <div class="ssc__head">
+      <div>
+        <div class="label rv"><b>03</b><span data-i18n="wk.k">Atuação</span></div>
+        <h2 class="sec__title rv" data-d="1" data-i18n="wk.title">Onde a tecnologia vira resultado.</h2>
+      </div>
+      <p class="sec__lead rv" data-d="2" data-i18n="wk.lead">Criar automações e agentes nunca foi tão simples. O desafio agora é fazer isso gerar receita, eficiência e escala — com governança.</p>
+    </div>
+    <div class="pillars">
+      <article class="pillar rv"><span class="pillar__n">01</span><span class="pillar__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6.3 6.3l2.8 2.8M14.9 14.9l2.8 2.8M6.3 17.7l2.8-2.8M14.9 9.1l2.8-2.8"/></svg></span><h3 data-i18n="wk.1t">Inteligência Artificial aplicada</h3><p data-i18n="wk.1p">IA e agentes conectados a processos reais, com métricas de negócio desde o primeiro dia. Menos piloto, mais operação.</p></article>
+      <article class="pillar rv" data-d="1"><span class="pillar__n">02</span><span class="pillar__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/><path d="M6.5 10v4a3 3 0 0 0 3 3H14M17.5 14v-4a3 3 0 0 0-3-3H10"/></svg></span><h3 data-i18n="wk.2t">Automação Empresarial</h3><p data-i18n="wk.2p">Automação em escala Enterprise: processos redesenhados, digital workers e orquestração com segurança, controle e auditoria.</p></article>
+      <article class="pillar rv" data-d="2"><span class="pillar__n">03</span><span class="pillar__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M10.8 7.2 6.2 15.8M13.2 7.2l4.6 8.6M7.5 18h9"/></svg></span><h3 data-i18n="wk.3t">Ecossistemas de parceiros</h3><p data-i18n="wk.3p">Parcerias estratégicas que multiplicam alcance: go-to-market conjunto, capacitação e co-venda em toda a América Latina.</p></article>
+      <article class="pillar rv" data-d="3"><span class="pillar__n">04</span><span class="pillar__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span><h3 data-i18n="wk.4t">Empreendedorismo e escala</h3><p data-i18n="wk.4p">Negócios desenhados para crescer sem depender de pessoas-chave: processos, tecnologia e gestão orientados a escala.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER -->
+<section class="sec" id="trajetoria">
+  <div class="wrap">
+    <div class="career__top">
+      <div>
+        <div class="label rv"><b>04</b><span data-i18n="car.k">Trajetória</span></div>
+        <h2 class="sec__title rv" data-d="1" data-i18n="car.title">Minha jornada.</h2>
+        <p class="sec__lead rv" data-d="2" data-i18n="car.lead">Mais de 15 anos em empresas globais de tecnologia — de análise de negócios e finanças a dados, IA e automação empresarial.</p>
+      </div>
+      <div class="now rv" data-d="2">
+        <div class="now__k"><i></i><span data-i18n="car.now">Hoje</span></div>
+        <p class="now__r">Partner Manager LATAM</p>
+        <p class="now__c">SS&amp;C Blue Prism</p>
+      </div>
+    </div>
+    <div class="tl">
+      <article class="tl__item rv">
+        <div class="tl__left"><div class="tl__head"><h3>SS&amp;C Blue Prism</h3><span class="tl__now" data-i18n="car.now">Hoje</span></div>        <p class="tl__r" data-i18n="car.r1">Partner Manager LATAM · Former Account Director LATAM</p></div>
+        <p class="tl__p" data-i18n="car.t1">Lidero estratégias de crescimento para parceiros e clientes na América Latina, conectando Inteligência Artificial, Automação Empresarial e Orquestração para acelerar a transformação digital de grandes organizações. Trabalho no desenvolvimento de ecossistemas estratégicos, expansão de mercado e iniciativas de inovação com algumas das maiores empresas da região.</p>
+      </article>
+      <article class="tl__item rv" data-d="1">
+        <div class="tl__left"><div class="tl__head"><h3>Tableau</h3></div>        <p class="tl__r" data-i18n="car.r2">Product Consultant LATAM</p></div>
+        <p class="tl__p" data-i18n="car.t2">Ajudei organizações a transformar dados em decisões estratégicas através de Business Intelligence e Analytics, conduzindo projetos para grandes empresas na América Latina.</p>
+      </article>
+      <article class="tl__item rv" data-d="2">
+        <div class="tl__left"><div class="tl__head"><h3>Apple</h3></div>        <p class="tl__r" data-i18n="car.r3">Global Finance Project Manager</p></div>
+        <p class="tl__p" data-i18n="car.t3">Atuei em iniciativas globais de gestão de projetos financeiros, colaborando com equipes internacionais na melhoria de processos, governança e eficiência operacional.</p>
+      </article>
+      <article class="tl__item rv" data-d="3">
+        <div class="tl__left"><div class="tl__head"><h3>Hewlett-Packard <em>(HP)</em></h3></div>        <p class="tl__r" data-i18n="car.r4">Business Analyst LATAM</p></div>
+        <p class="tl__p" data-i18n="car.t4">Participei de projetos estratégicos voltados para análise de negócios, melhoria de processos e suporte às operações corporativas na América Latina.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
 <section class="paper" id="filosofia">
   <div class="wrap philo">
     <div class="philo__head">
       <div>
-        <div class="label rv"><b>01</b><span data-i18n="philo.k">Filosofia</span></div>
+        <div class="label rv"><b>05</b><span data-i18n="philo.k">Filosofia</span></div>
         <h2 class="philo__title rv" data-d="1" data-i18n="philo.title">Minha filosofia.</h2>
       </div>
       <p class="philo__note rv" data-d="2" data-i18n="philo.note">Cinco princípios que guiam como construo empresas, parcerias e tecnologia.</p>
@@ -449,93 +715,109 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   </div>
 </section>
 
-<!-- ============ CAREER ============ -->
-<section class="sec" id="trajetoria">
+<!-- VENTURES -->
+<section class="sec" id="negocios">
   <div class="wrap">
-    <div class="career__top">
+    <div class="ssc__head">
       <div>
-        <div class="label rv"><b>02</b><span data-i18n="car.k">Trajetória</span></div>
-        <h2 class="sec__title rv" data-d="1" data-i18n="car.title">Tecnologia corporativa.</h2>
-        <p class="sec__lead rv" data-d="2" data-i18n="car.lead">Mais de 15 anos em empresas globais de tecnologia — conectando IA e automação a resultado de negócio.</p>
-      </div>
-      <div class="now rv" data-d="2">
-        <div class="now__k"><i></i><span data-i18n="car.now">Hoje</span></div>
-        <p class="now__r">Partner Manager LATAM</p>
-        <p class="now__c">SS&amp;C Blue Prism</p>
-      </div>
-    </div>
-    <div class="logos" role="list">
-      <div class="logo rv" role="listitem"><small>01</small><span>SS&amp;C <em>Technologies</em></span></div>
-      <div class="logo rv" data-d="1" role="listitem"><small>02</small><span>Blue Prism</span></div>
-      <div class="logo rv" data-d="2" role="listitem"><small>03</small><span>Tableau</span></div>
-      <div class="logo rv" data-d="3" role="listitem"><small>04</small><span>Apple</span></div>
-      <div class="logo rv" data-d="4" role="listitem"><small>05</small><span>Hewlett-Packard <em>(HP)</em></span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ VENTURES ============ -->
-<section class="paper" id="negocios">
-  <div class="wrap ventures">
-    <div class="ventures__grid">
-      <figure class="ventures__photo rv">
-        <img src="assets/rodrigo-cid-lobby.webp" width="752" height="1632" alt="Rodrigo Cid" loading="lazy">
-        <figcaption><b>Rodrigo Cid</b><span data-i18n="ven.cap">Entrepreneur</span></figcaption>
-      </figure>
-      <div>
-        <div class="label rv"><b>03</b><span data-i18n="ven.k">Empreendimentos</span></div>
+        <div class="label rv"><b>06</b><span data-i18n="ven.k">Empreendimentos</span></div>
         <h2 class="sec__title rv" data-d="1" data-i18n="ven.title">Negócios que construo.</h2>
-        <p class="sec__lead rv" data-d="2" data-i18n="ven.lead">A mesma lógica de execução, aplicada fora da tecnologia corporativa: empresas desenhadas para escalar.</p>
-        <div class="venture-list">
-          <article class="venture rv" data-d="2">
-            <div class="venture__mk">TG</div>
-            <div><h3>Twins Group</h3><p data-i18n="ven.tg">Hospitality · Fundador</p></div>
-            <span class="venture__tag" data-i18n="ven.tgt">Hospitalidade</span>
-          </article>
-          <article class="venture rv" data-d="3">
-            <div class="venture__mk">VY</div>
-            <div><h3>VYBR Tech</h3><p data-i18n="ven.vy">Tecnologia</p></div>
-            <span class="venture__tag" data-i18n="ven.vyt">Tech</span>
-          </article>
-        </div>
       </div>
+      <p class="sec__lead rv" data-d="2" data-i18n="ven.lead">A mesma lógica de execução, aplicada fora da tecnologia corporativa: empresas desenhadas para escalar.</p>
+    </div>
+    <div class="vgrid">
+      <article class="vcard rv">
+        <div class="vcard__top"><span class="vcard__mk">TG</span><span class="vcard__role" data-i18n="ven.tgr">Fundador · 2024</span></div>
+        <h3>Twins Group</h3><p class="vcard__s" data-i18n="ven.tgs">Hospitalidade &amp; entretenimento · Austin, TX</p>
+        <p class="vcard__p" data-i18n="ven.tgp">Grupo de hospitalidade sediado em Austin, Texas, focado em entretenimento, vida noturna e experiências premium. Nasceu para desenvolver marcas próprias com foco em experiência, comunidade e inovação.</p>
+        <div class="units"><span class="units__k" data-i18n="ven.tgu">Operações</span><span data-i18n="ven.tg1">Twins Club</span><span data-i18n="ven.tg2">Twins Rooftop</span></div>
+      </article>
+      <article class="vcard vcard--blue rv" data-d="1">
+        <div class="vcard__top"><span class="vcard__mk">VY</span><span class="vcard__role" data-i18n="ven.vyr">Founder &amp; Product Strategist</span></div>
+        <h3>VYBR Tech</h3><p class="vcard__s" data-i18n="ven.vys">Tecnologia · Entretenimento</p>
+        <p class="vcard__p" data-i18n="ven.vyp">Startup de tecnologia para a indústria do entretenimento: uma plataforma que conecta DJs, casas noturnas, promotores de eventos e clientes em um único ecossistema digital. A missão é transformar a gestão operacional, o relacionamento com clientes e a experiência do público através da tecnologia.</p>
+        <div class="units"><span class="units__k" data-i18n="ven.vyu">Ecossistema</span><span data-i18n="ven.vy1">DJs</span><span data-i18n="ven.vy2">Casas noturnas</span><span data-i18n="ven.vy3">Promotores</span><span data-i18n="ven.vy4">Público</span></div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ============ FRONTS ============ -->
+<!-- TALKS -->
+<section class="paper" id="palestras">
+  <div class="wrap pad">
+    <div class="ssc__head">
+      <div>
+        <div class="label rv"><b>07</b><span data-i18n="tk.k">Palestras</span></div>
+        <h2 class="sec__title rv" data-d="1" data-i18n="tk.title">Speaking.</h2>
+      </div>
+      <p class="sec__lead rv" data-d="2" data-i18n="tk.lead">Levo para palcos, comitês executivos e eventos uma visão prática sobre IA, automação, parcerias e empreendedorismo — sem hype, com foco em execução.</p>
+    </div>
+    <div class="talks">
+      <article class="talk rv"><span class="talk__k"><b>01</b><span data-i18n="tk.tag">Tema</span></span><h3 data-i18n="tk.1t">Inteligência Artificial aplicada aos negócios</h3><p data-i18n="tk.1p">Como sair do experimento e conectar IA a processos, métricas e resultado real.</p></article>
+      <article class="talk rv" data-d="1"><span class="talk__k"><b>02</b><span data-i18n="tk.tag">Tema</span></span><h3 data-i18n="tk.2t">Automação Empresarial e Agentic AI</h3><p data-i18n="tk.2p">Agentes, orquestração e governança: o que muda quando a automação passa a decidir.</p></article>
+      <article class="talk rv" data-d="2"><span class="talk__k"><b>03</b><span data-i18n="tk.tag">Tema</span></span><h3 data-i18n="tk.3t">Estratégias de crescimento na América Latina</h3><p data-i18n="tk.3p">Ecossistemas de parceiros, expansão de mercado e go-to-market na região.</p></article>
+      <article class="talk rv" data-d="3"><span class="talk__k"><b>04</b><span data-i18n="tk.tag">Tema</span></span><h3 data-i18n="tk.4t">Empreendedorismo e construção de negócios</h3><p data-i18n="tk.4p">Da ideia à operação: execução, processos e negócios desenhados para escalar.</p></article>
+    </div>
+    <div class="talks__foot rv">
+      <div class="formats"><span class="formats__k" data-i18n="tk.f">Formatos</span><span data-i18n="tk.f1">Keynote</span><span data-i18n="tk.f2">Painel executivo</span><span data-i18n="tk.f3">Workshop</span><span data-i18n="tk.f4">Podcast &amp; entrevistas</span></div>
+      <a class="btn btn--dark" href="#contato" data-topic-link="speaking"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5M8 22h8"/></svg><span data-i18n="cta.invite">Convidar para um evento</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FRONTS -->
 <section class="sec" id="frentes">
   <div class="wrap">
-    <div class="label rv"><b>04</b><span data-i18n="fr.k">Outras frentes</span></div>
+    <div class="label rv"><b>08</b><span data-i18n="fr.k">Outras frentes</span></div>
     <h2 class="sec__title rv" data-d="1" data-i18n="fr.title">Onde mais atuo.</h2>
     <div class="fronts__grid">
-      <article class="front rv"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09Z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2Z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span><small>01</small></div><h3 data-i18n="fr.1">Empreendedor</h3></article>
-      <article class="front rv" data-d="1"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5M8 22h8"/></svg></span><small>02</small></div><h3>Speaker</h3></article>
-      <article class="front rv" data-d="2"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z"/></svg></span><small>03</small></div><h3>Business Advisor</h3></article>
-      <article class="front rv" data-d="3"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span><small>04</small></div><h3 data-i18n="fr.4">Investidor</h3></article>
-      <article class="front rv" data-d="4"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-4a3 3 0 0 1 6 0v4M9 10h.01M15 10h.01"/></svg></span><small>05</small></div><h3>Hospitality Operator</h3></article>
+      <article class="front rv"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09Z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2Z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span><small>01</small></div><div><h3 data-i18n="fr.1">Empreendedor</h3><p data-i18n="fr.1p">Fundador do Twins Group e da VYBR Tech, em Austin, Texas.</p></div></article>
+      <article class="front rv" data-d="1"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5M8 22h8"/></svg></span><small>02</small></div><div><h3>Speaker</h3><p data-i18n="fr.2p">Palestras e painéis sobre IA, automação, parcerias e empreendedorismo.</p></div></article>
+      <article class="front rv" data-d="2"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z"/></svg></span><small>03</small></div><div><h3>Business Advisor</h3><p data-i18n="fr.3p">Advisor de empresas de tecnologia, IA, automação e SaaS — estratégia comercial, crescimento e expansão de mercado.</p></div></article>
+      <article class="front rv" data-d="3"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span><small>04</small></div><div><h3 data-i18n="fr.4">Investidor</h3><p data-i18n="fr.4p">Investimento em tecnologia, hospitalidade e negócios em estágio inicial.</p></div></article>
+      <article class="front rv" data-d="4"><div class="front__top"><span class="front__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-4a3 3 0 0 1 6 0v4M9 10h.01M15 10h.01"/></svg></span><small>05</small></div><div><h3>Hospitality Operator</h3><p data-i18n="fr.5p">Operação de hospitalidade com foco em experiência, eficiência e processos.</p></div></article>
     </div>
   </div>
 </section>
 
-<!-- ============ CONTACT ============ -->
+<!-- SOCIAL IMPACT -->
+<section class="impact" id="impacto">
+  <div class="wrap impact__in">
+    <div class="impact__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.7-9.2-9A5.2 5.2 0 0 1 12 6.7a5.2 5.2 0 0 1 9.2 4.8c-1.7 4.3-9.2 9-9.2 9Z"/></svg></div>
+    <div>
+      <div class="label rv"><span data-i18n="im.k">Impacto social</span></div>
+      <h2 class="impact__t rv" data-d="1" data-i18n="im.t">Tecnologia é meio. Impacto é o ponto.</h2>
+      <p class="impact__p rv" data-d="2" data-i18n-html="im.p">Além da atuação profissional e empresarial, apoio iniciativas internacionais de impacto social: patrocino de forma contínua uma criança na África e apoio a <strong>Tim Tebow Foundation</strong>, organização dedicada ao cuidado e à proteção de crianças em situação de vulnerabilidade.</p>
+      <a class="impact__a rv" data-d="2" href="https://www.timtebowfoundation.org/" target="_blank" rel="noopener"><span data-i18n="im.l">Conhecer a Tim Tebow Foundation</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section class="sec contact" id="contato">
   <div class="wrap contact__grid">
     <div>
-      <div class="label rv"><b>05</b><span data-i18n="ct.k">Contato</span></div>
+      <div class="label rv"><b>09</b><span data-i18n="ct.k">Contato</span></div>
       <h2 class="contact__title rv" data-d="1" data-i18n-html="ct.title">Vamos<br>construir<br><span>juntos.</span></h2>
+      <p class="sec__lead rv" data-d="2" data-i18n="ct.lead">Speaking, consultoria Enterprise, parcerias estratégicas, oportunidades de negócio ou networking — me conte o contexto e eu retorno.</p>
       <div class="contact__alt">
+        <a class="alt rv js-wa" data-d="2" href="#" target="_blank" rel="noopener">
+          <div><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.76-1.84-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></svg><span><strong>WhatsApp</strong><small class="js-phone" data-i18n="ct.wa">Resposta direta</small></span></div><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
         <a class="alt rv js-calendly" data-d="2" href="#" target="_blank" rel="noopener">
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg><span><strong data-i18n="cta.book">Agendar conversa</strong><small>Calendly</small></span></div>
-          <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg><span><strong data-i18n="cta.book">Agendar conversa</strong><small>Calendly</small></span></div><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
         </a>
         <a class="alt rv js-li" data-d="3" href="#" target="_blank" rel="noopener">
-          <div><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg><span><strong>LinkedIn</strong><small data-i18n="ct.li">Conecte-se</small></span></div>
-          <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          <div><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg><span><strong>LinkedIn</strong><small data-i18n="ct.li">Conectar e acompanhar conteúdos</small></span></div><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
         </a>
-        <button type="button" class="alt rv js-vcard" data-d="4" style="text-align:left;width:100%">
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span><strong data-i18n="cta.save">Salvar contato</strong><small>vCard · iPhone / Android</small></span></div>
-          <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        <a class="alt rv js-ig" data-d="3" href="#" target="_blank" rel="noopener" hidden>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg><span><strong>Instagram</strong><small class="js-ig-h"></small></span></div><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <a class="alt rv js-mail" data-d="3" href="#" hidden>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 7 9 6 9-6"/></svg><span><strong>E-mail</strong><small class="js-mail-t" data-i18n="ct.mail">Contato profissional</small></span></div><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <button type="button" class="alt rv js-vcard" data-d="4">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span><strong data-i18n="cta.save">Salvar contato</strong><small>vCard · iPhone / Android</small></span></div><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
         </button>
       </div>
     </div>
@@ -548,15 +830,13 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
         <button type="button" class="opt" data-topic="business" aria-pressed="false">Business Opportunities</button>
         <button type="button" class="opt" data-topic="networking" aria-pressed="false">Networking</button>
       </div>
+      <p class="opt-desc" id="optDesc" aria-live="polite"></p>
       <div class="field-row">
         <label class="field"><span data-i18n="ct.name">Nome</span><input name="name" autocomplete="name" required></label>
         <label class="field"><span data-i18n="ct.company">Empresa</span><input name="company" autocomplete="organization"></label>
       </div>
       <label class="field"><span data-i18n="ct.msg">Mensagem</span><textarea name="msg" data-i18n-ph="ct.msgph" placeholder="Conte brevemente o contexto."></textarea></label>
-      <button class="btn btn--primary" type="submit">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Z"/></svg>
-        <span data-i18n="ct.send">Enviar pelo WhatsApp</span>
-      </button>
+      <button class="btn btn--primary" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.76-1.84-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></svg><span data-i18n="ct.send">Enviar pelo WhatsApp</span></button>
       <p class="form__hint" data-i18n="ct.hint">Sua mensagem abre pronta no WhatsApp.</p>
     </form>
   </div>
@@ -564,190 +844,124 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 </main>
 
 <footer class="foot">
-  <div class="wrap foot__in">
-    <span>© <span id="y">2026</span> Rodrigo Cid</span>
-    <div class="foot__links">
-      <a class="js-li" href="#" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="js-wa" href="#" target="_blank" rel="noopener">WhatsApp</a>
-      <a class="js-calendly" href="#" target="_blank" rel="noopener">Calendly</a>
+  <div class="wrap">
+    <p class="foot__tag" data-i18n="foot.tag">Execution beats ideas.</p>
+    <div class="foot__in">
+      <span>© <span id="y">2026</span> Rodrigo Cid</span>
+      <div class="foot__links">
+        <a class="js-li" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="js-wa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="js-calendly" href="#" target="_blank" rel="noopener">Calendly</a>
+      </div>
+      <span><span data-i18n="foot.by">Desenvolvido por</span> <a href="https://kngflow.com.br" target="_blank" rel="noopener" style="color:var(--fg-2)">KNGflow</a></span>
     </div>
-    <span><span data-i18n="foot.by">Desenvolvido por</span> <a href="https://kngflow.com.br" target="_blank" rel="noopener" style="color:var(--fg-2)">KNGflow</a></span>
   </div>
 </footer>
 
-<!-- ============ MOBILE DOCK ============ -->
 <nav class="dock" id="dock" aria-label="Ações rápidas">
-  <a class="is-main js-calendly" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg><span data-i18n="dock.book">Agendar</span></a>
-  <a class="js-wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.15a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Z"/></svg><span>WhatsApp</span></a>
-  <a class="js-li" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg><span>LinkedIn</span></a>
-  <button type="button" class="js-vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span data-i18n="dock.save">Salvar</span></button>
+  <a class="is-main js-calendly" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg><span data-i18n="dock.book">Agendar</span></a>
+  <a class="js-wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.76-1.84-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></svg><span>WhatsApp</span></a>
+  <a class="js-li" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg><span>LinkedIn</span></a>
+  <button type="button" class="js-vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span data-i18n="dock.save">Salvar</span></button>
 </nav>
 
 <script>
 /* =========================================================
-   CONFIG — preencha os links reais do Rodrigo aqui
+   CONFIG — preencha com os dados reais do Rodrigo
    ========================================================= */
 const CONFIG = {
-  whatsapp: "5500000000000",                       // DDI+DDD+número, só dígitos
-  linkedin: "https://www.linkedin.com/in/SEU-PERFIL/",
-  calendly: "https://calendly.com/SEU-LINK",
-  email:    "",                                    // opcional (entra no vCard)
-  site:     "https://rodrigocid.com"
+  whatsapp:     "15125909661",                        // DDI+DDD+número, só dígitos
+  phoneDisplay: "+1 (512) 590-9661",
+  linkedin:     "https://www.linkedin.com/in/rodrigocid10",
+  calendly:     "",                                   // link do Calendly (vazio = botão oculto)
+  instagram:    "",                                   // Instagram do Twins Group (vazio = oculto)
+  igLabel:      "Twins Group",
+  email:        "rodrigo.cid@sscinc.com",
+  site:         "https://rodrigocid.com"
 };
-
-/* ---------- i18n ---------- */
-const T = {
-  pt:{
-    "nav.philo":"Filosofia","nav.career":"Trajetória","nav.ventures":"Negócios","nav.fronts":"Frentes","nav.contact":"Contato",
-    "cta.save":"Salvar contato","cta.book":"Agendar conversa",
-    "hero.role2":"Empreendedor · Twins Group","hero.quote":'Entre tecnologia e empreendedorismo existe <em class="x">execução</em>. <em>É nela que construo negócios.</em>',
-    "hero.tag":"Atuação","hero.tagv":"20+ países nas Américas","hero.scroll":"Role",
-    "pos.ai":"Inteligência Artificial","pos.auto":"Automação Empresarial","pos.ent":"Empreendedorismo",
-    "num.1":"anos em tecnologia corporativa","num.2":"países de atuação nas Américas","num.3":"em contratos Enterprise negociados",
-    "num.4":'Fundador do <strong style="font-weight:500">Twins Group Hospitality</strong>',
-    "num.5":"Parceiro estratégico <span>de algumas das maiores empresas da América Latina</span>",
-    "philo.k":"Filosofia","philo.title":"Minha filosofia.","philo.note":"Cinco princípios que guiam como construo empresas, parcerias e tecnologia.",
-    "ph.1":"Tecnologia deve gerar <b>resultado de negócio</b>, não apenas automação.",
-    "ph.2":"<b>Execução</b> vence ideias.",
-    "ph.3":"A IA não vai substituir empreendedores. <b>Vai amplificá-los.</b>",
-    "ph.4":"Grandes parcerias geram <b>crescimento exponencial.</b>",
-    "ph.5":"Negócios devem ser desenhados para <b>escalar sem depender de pessoas.</b>",
-    "car.k":"Trajetória","car.title":"Tecnologia corporativa.","car.lead":"Mais de 15 anos em empresas globais de tecnologia — conectando IA e automação a resultado de negócio.","car.now":"Hoje",
-    "ven.k":"Empreendimentos","ven.title":"Negócios que construo.","ven.lead":"A mesma lógica de execução, aplicada fora da tecnologia corporativa: empresas desenhadas para escalar.","ven.cap":"Empreendedor",
-    "ven.tg":"Hospitality · Fundador","ven.tgt":"Hospitalidade","ven.vy":"Tecnologia","ven.vyt":"Tech",
-    "fr.k":"Outras frentes","fr.title":"Onde mais atuo.","fr.1":"Empreendedor","fr.4":"Investidor",
-    "ct.k":"Contato","ct.title":"Vamos<br>construir<br><span>juntos.</span>","ct.li":"Conecte-se","ct.topic":"Assunto",
-    "ct.name":"Nome","ct.company":"Empresa","ct.msg":"Mensagem","ct.msgph":"Conte brevemente o contexto.","ct.send":"Enviar pelo WhatsApp","ct.hint":"Sua mensagem abre pronta no WhatsApp.",
-    "foot.by":"Desenvolvido por","dock.book":"Agendar","dock.save":"Salvar",
-    "wa.hi":"Olá, Rodrigo! Vim pelo seu site.","wa.topic":"Assunto","wa.name":"Nome","wa.company":"Empresa",
-    "meta.title":"Rodrigo Cid — Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group",
-    "vc.title":"Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group"
-  },
-  en:{
-    "nav.philo":"Philosophy","nav.career":"Career","nav.ventures":"Ventures","nav.fronts":"Focus","nav.contact":"Contact",
-    "cta.save":"Save contact","cta.book":"Book a meeting",
-    "hero.role2":"Entrepreneur · Twins Group","hero.quote":'Between technology and entrepreneurship lies <em class="x">execution</em>. <em>That is where I build businesses.</em>',
-    "hero.tag":"Reach","hero.tagv":"20+ countries across the Americas","hero.scroll":"Scroll",
-    "pos.ai":"Artificial Intelligence","pos.auto":"Enterprise Automation","pos.ent":"Entrepreneurship",
-    "num.1":"years in enterprise technology","num.2":"countries across the Americas","num.3":"in Enterprise contracts negotiated",
-    "num.4":'Founder of <strong style="font-weight:500">Twins Group Hospitality</strong>',
-    "num.5":"Strategic partner <span>to some of the largest companies in Latin America</span>",
-    "philo.k":"Philosophy","philo.title":"My philosophy.","philo.note":"Five principles that guide how I build companies, partnerships and technology.",
-    "ph.1":"Technology should create <b>business outcomes</b>, not just automation.",
-    "ph.2":"<b>Execution</b> beats ideas.",
-    "ph.3":"AI won’t replace entrepreneurs. <b>It will amplify them.</b>",
-    "ph.4":"Great partnerships create <b>exponential growth.</b>",
-    "ph.5":"Businesses should be designed to <b>scale without depending on people.</b>",
-    "car.k":"Career","car.title":"Enterprise technology.","car.lead":"15+ years at global technology companies — turning AI and automation into business outcomes.","car.now":"Today",
-    "ven.k":"Ventures","ven.title":"Businesses I build.","ven.lead":"The same execution mindset, applied beyond enterprise tech: companies designed to scale.","ven.cap":"Entrepreneur",
-    "ven.tg":"Hospitality · Founder","ven.tgt":"Hospitality","ven.vy":"Technology","ven.vyt":"Tech",
-    "fr.k":"Other fronts","fr.title":"Where else I work.","fr.1":"Entrepreneur","fr.4":"Investor",
-    "ct.k":"Contact","ct.title":"Let’s<br>build<br><span>together.</span>","ct.li":"Connect","ct.topic":"Topic",
-    "ct.name":"Name","ct.company":"Company","ct.msg":"Message","ct.msgph":"Briefly share the context.","ct.send":"Send via WhatsApp","ct.hint":"Your message opens ready to send on WhatsApp.",
-    "foot.by":"Built by","dock.book":"Book","dock.save":"Save",
-    "wa.hi":"Hi Rodrigo! I found you through your website.","wa.topic":"Topic","wa.name":"Name","wa.company":"Company",
-    "meta.title":"Rodrigo Cid — Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group",
-    "vc.title":"Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group"
-  },
-  es:{
-    "nav.philo":"Filosofía","nav.career":"Trayectoria","nav.ventures":"Negocios","nav.fronts":"Frentes","nav.contact":"Contacto",
-    "cta.save":"Guardar contacto","cta.book":"Agendar reunión",
-    "hero.role2":"Emprendedor · Twins Group","hero.quote":'Entre la tecnología y el emprendimiento existe la <em class="x">ejecución</em>. <em>Es ahí donde construyo negocios.</em>',
-    "hero.tag":"Presencia","hero.tagv":"20+ países en las Américas","hero.scroll":"Desliza",
-    "pos.ai":"Inteligencia Artificial","pos.auto":"Automatización Empresarial","pos.ent":"Emprendimiento",
-    "num.1":"años en tecnología corporativa","num.2":"países en las Américas","num.3":"en contratos Enterprise negociados",
-    "num.4":'Fundador de <strong style="font-weight:500">Twins Group Hospitality</strong>',
-    "num.5":"Socio estratégico <span>de algunas de las mayores empresas de América Latina</span>",
-    "philo.k":"Filosofía","philo.title":"Mi filosofía.","philo.note":"Cinco principios que guían cómo construyo empresas, alianzas y tecnología.",
-    "ph.1":"La tecnología debe generar <b>resultados de negocio</b>, no solo automatización.",
-    "ph.2":"La <b>ejecución</b> vence a las ideas.",
-    "ph.3":"La IA no reemplazará a los emprendedores. <b>Los amplificará.</b>",
-    "ph.4":"Las grandes alianzas generan <b>crecimiento exponencial.</b>",
-    "ph.5":"Los negocios deben diseñarse para <b>escalar sin depender de las personas.</b>",
-    "car.k":"Trayectoria","car.title":"Tecnología corporativa.","car.lead":"Más de 15 años en empresas globales de tecnología — conectando IA y automatización con resultados de negocio.","car.now":"Hoy",
-    "ven.k":"Emprendimientos","ven.title":"Negocios que construyo.","ven.lead":"La misma lógica de ejecución, aplicada más allá de la tecnología corporativa: empresas diseñadas para escalar.","ven.cap":"Emprendedor",
-    "ven.tg":"Hospitality · Fundador","ven.tgt":"Hospitalidad","ven.vy":"Tecnología","ven.vyt":"Tech",
-    "fr.k":"Otros frentes","fr.title":"Dónde más actúo.","fr.1":"Emprendedor","fr.4":"Inversionista",
-    "ct.k":"Contacto","ct.title":"Construyamos<br><span>juntos.</span>","ct.li":"Conectemos","ct.topic":"Asunto",
-    "ct.name":"Nombre","ct.company":"Empresa","ct.msg":"Mensaje","ct.msgph":"Cuéntame brevemente el contexto.","ct.send":"Enviar por WhatsApp","ct.hint":"Tu mensaje se abre listo en WhatsApp.",
-    "foot.by":"Desarrollado por","dock.book":"Agendar","dock.save":"Guardar",
-    "wa.hi":"¡Hola, Rodrigo! Llegué a través de tu sitio web.","wa.topic":"Asunto","wa.name":"Nombre","wa.company":"Empresa",
-    "meta.title":"Rodrigo Cid — Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group",
-    "vc.title":"Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group"
-  }
-};
+const T = {"pt": {"meta.title": "Rodrigo Cid — Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group", "nav.profile": "Perfil", "nav.philo": "Filosofia", "nav.work": "Atuação", "nav.career": "Trajetória", "nav.ventures": "Negócios", "nav.talks": "Palestras", "nav.contact": "Contato", "cta.save": "Salvar contato", "cta.book": "Agendar conversa", "cta.invite": "Convidar para um evento", "cta.talk": "Falar sobre parcerias", "hero.role2": "Empreendedor · Twins Group", "hero.quote": "Entre tecnologia e empreendedorismo existe <em class=\"x\">execução</em>. <em>É nela que construo negócios.</em>", "hero.lead": "Conecto Inteligência Artificial, automação e parcerias estratégicas a resultado de negócio — na América Latina e nos Estados Unidos.", "hero.tag": "Atuação", "hero.tagv": "20+ países nas Américas", "pos.ai": "Inteligência Artificial", "pos.auto": "Automação Empresarial", "pos.ent": "Empreendedorismo", "num.1": "anos em tecnologia corporativa", "num.2": "países de atuação nas Américas", "num.3": "em contratos Enterprise negociados", "num.4": "Fundador do <strong>Twins Group</strong> e da <strong>VYBR Tech</strong>", "num.5": "Parceiro estratégico <span>de algumas das maiores empresas da América Latina</span>", "pov.k": "Ponto de vista", "pov.t": "A maioria das empresas não tem um problema de tecnologia. <span>Tem um problema de execução.</span>", "pov.p": "Ferramentas nunca foram tão acessíveis. O que separa quem captura valor de quem acumula pilotos é a capacidade de transformar tecnologia em operação, parceria e resultado mensurável.", "pro.k": "Perfil", "pro.title": "Tecnologia, parcerias e negócios próprios.", "pro.p1": "São mais de 15 anos dentro da tecnologia corporativa, passando por <strong>Hewlett-Packard, Apple, Tableau e SS&C Blue Prism</strong>. Nesse percurso atuei em mais de 20 países das Américas e negociei mais de US$ 10 milhões em contratos Enterprise.", "pro.p2": "Hoje, como <strong>Partner Manager LATAM na SS&C Blue Prism</strong>, lidero estratégias de crescimento para parceiros e clientes na América Latina, conectando Inteligência Artificial, Automação Empresarial e Orquestração à transformação digital de grandes organizações.", "pro.p3": "Em paralelo, construo negócios próprios a partir de Austin, no Texas: fundei o <strong>Twins Group</strong>, grupo de hospitalidade e entretenimento, e a <strong>VYBR Tech</strong>, startup de tecnologia para a indústria do entretenimento. É nessa dupla vivência — executivo de tecnologia e empreendedor — que nasce a minha forma de enxergar negócios: tecnologia só vale quando vira resultado.", "pro.cap": "Executivo & empreendedor", "ssc.k": "SS&C Blue Prism", "ssc.title": "A estrutura global por trás do meu trabalho.", "ssc.lead": "A SS&C Technologies, fundada em 1986, é uma das maiores fornecedoras de software e serviços para os setores financeiro e de saúde. A Blue Prism, criada em 2001 no Reino Unido, popularizou o conceito de RPA e levou a automação para dentro das grandes corporações. Desde 2022, as duas operam juntas como SS&C Blue Prism.", "ssc.s1": "colaboradores no mundo", "ssc.s2": "clientes corporativos", "ssc.s3": "anos consecutivos como Líder no Gartner® Magic Quadrant™ de RPA", "ssc.s4": "lançamento do WorkHQ, plataforma de automação agêntica", "ssc.wk": "A plataforma", "ssc.wt": "WorkHQ", "ssc.wp": "Lançado em abril de 2026, o WorkHQ reúne agentes de IA, digital workers, APIs e pessoas em um único ambiente governado — com orquestração, segurança, auditoria e supervisão humana. É a resposta para a pergunta que vem depois do primeiro piloto: quem está no comando quando são mil agentes, e não um?", "ssc.wl": "Conhecer o WorkHQ", "ssc.rk": "Meu papel", "ssc.rt": "Partner Manager LATAM", "ssc.rp": "Desenvolvo o ecossistema de parceiros da SS&C Blue Prism na América Latina: consultorias, integradores e empresas de tecnologia que levam IA e automação Enterprise aos seus clientes — com go-to-market conjunto, capacitação e co-venda.", "wk.k": "Atuação", "wk.title": "Onde a tecnologia vira resultado.", "wk.lead": "Criar automações e agentes nunca foi tão simples. O desafio agora é fazer isso gerar receita, eficiência e escala — com governança.", "wk.1t": "Inteligência Artificial aplicada", "wk.1p": "IA e agentes conectados a processos reais, com métricas de negócio desde o primeiro dia. Menos piloto, mais operação.", "wk.2t": "Automação Empresarial", "wk.2p": "Automação em escala Enterprise: processos redesenhados, digital workers e orquestração com segurança, controle e auditoria.", "wk.3t": "Ecossistemas de parceiros", "wk.3p": "Parcerias estratégicas que multiplicam alcance: go-to-market conjunto, capacitação e co-venda em toda a América Latina.", "wk.4t": "Empreendedorismo e escala", "wk.4p": "Negócios desenhados para crescer sem depender de pessoas-chave: processos, tecnologia e gestão orientados a escala.", "car.k": "Trajetória", "car.title": "Minha jornada.", "car.lead": "Mais de 15 anos em empresas globais de tecnologia — de análise de negócios e finanças a dados, IA e automação empresarial.", "car.now": "Hoje", "car.d1": "Software e serviços para finanças e saúde", "car.d2": "Automação inteligente e RPA", "car.d3": "Dados, analytics e visualização", "car.d4": "Tecnologia e inovação", "car.d5": "Tecnologia corporativa e infraestrutura", "philo.k": "Filosofia", "philo.title": "Minha filosofia.", "philo.note": "Cinco princípios que guiam como construo empresas, parcerias e tecnologia.", "ph.1": "Tecnologia deve gerar <b>resultado de negócio</b>, não apenas automação.", "ph.2": "<b>Execução</b> vence ideias.", "ph.3": "A IA não vai substituir empreendedores. <b>Vai amplificá-los.</b>", "ph.4": "Grandes parcerias geram <b>crescimento exponencial.</b>", "ph.5": "Negócios devem ser desenhados para <b>escalar sem depender de pessoas.</b>", "ven.k": "Empreendimentos", "ven.title": "Negócios que construo.", "ven.lead": "A mesma lógica de execução, aplicada fora da tecnologia corporativa: empresas desenhadas para escalar.", "ven.tgr": "Fundador · 2024", "ven.tgs": "Hospitalidade & entretenimento · Austin, TX", "ven.tgp": "Grupo de hospitalidade sediado em Austin, Texas, focado em entretenimento, vida noturna e experiências premium. Nasceu para desenvolver marcas próprias com foco em experiência, comunidade e inovação.", "ven.vyr": "Founder & Product Strategist", "ven.vys": "Tecnologia · Entretenimento", "ven.vyp": "Startup de tecnologia para a indústria do entretenimento: uma plataforma que conecta DJs, casas noturnas, promotores de eventos e clientes em um único ecossistema digital. A missão é transformar a gestão operacional, o relacionamento com clientes e a experiência do público através da tecnologia.", "tk.k": "Palestras", "tk.title": "Speaking.", "tk.lead": "Levo para palcos, comitês executivos e eventos uma visão prática sobre IA, automação, parcerias e empreendedorismo — sem hype, com foco em execução.", "tk.tag": "Tema", "tk.1t": "Inteligência Artificial aplicada aos negócios", "tk.1p": "Como sair do experimento e conectar IA a processos, métricas e resultado real.", "tk.2t": "Automação Empresarial e Agentic AI", "tk.2p": "Agentes, orquestração e governança: o que muda quando a automação passa a decidir.", "tk.3t": "Estratégias de crescimento na América Latina", "tk.3p": "Ecossistemas de parceiros, expansão de mercado e go-to-market na região.", "tk.4t": "Empreendedorismo e construção de negócios", "tk.4p": "Da ideia à operação: execução, processos e negócios desenhados para escalar.", "tk.f": "Formatos", "tk.f1": "Keynote", "tk.f2": "Painel executivo", "tk.f3": "Workshop", "tk.f4": "Podcast & entrevistas", "fr.k": "Outras frentes", "fr.title": "Onde mais atuo.", "fr.1": "Empreendedor", "fr.1p": "Fundador do Twins Group e da VYBR Tech, em Austin, Texas.", "fr.2p": "Palestras e painéis sobre IA, automação, parcerias e empreendedorismo.", "fr.3p": "Advisor de empresas de tecnologia, IA, automação e SaaS — estratégia comercial, crescimento e expansão de mercado.", "fr.4": "Investidor", "fr.4p": "Investimento em tecnologia, hospitalidade e negócios em estágio inicial.", "fr.5p": "Operação de hospitalidade com foco em experiência, eficiência e processos.", "ct.k": "Contato", "ct.title": "Vamos<br>construir<br><span>juntos.</span>", "ct.lead": "Speaking, consultoria Enterprise, parcerias estratégicas, oportunidades de negócio ou networking — me conte o contexto e eu retorno.", "ct.li": "Conectar e acompanhar conteúdos", "ct.wa": "Resposta direta", "ct.topic": "Assunto", "ct.o.speaking": "Palestras, keynotes e painéis para eventos e empresas.", "ct.o.consulting": "IA e automação Enterprise aplicadas à sua operação.", "ct.o.partnerships": "Alianças, co-venda e go-to-market na América Latina.", "ct.o.business": "Negócios, investimentos e novos projetos.", "ct.o.networking": "Conectar, trocar ideias e abrir portas.", "ct.name": "Nome", "ct.company": "Empresa", "ct.msg": "Mensagem", "ct.msgph": "Conte brevemente o contexto.", "ct.send": "Enviar pelo WhatsApp", "ct.hint": "Sua mensagem abre pronta no WhatsApp.", "foot.tag": "Execution beats ideas.", "foot.by": "Desenvolvido por", "dock.book": "Agendar", "dock.save": "Salvar", "wa.hi": "Olá, Rodrigo! Vim pelo seu site.", "wa.topic": "Assunto", "wa.name": "Nome", "wa.company": "Empresa", "vc.title": "Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group", "hero.role3": "Founder · VYBR Tech", "hero.loc": "Austin, Texas · EUA", "car.r1": "Partner Manager LATAM · Former Account Director LATAM", "car.t1": "Lidero estratégias de crescimento para parceiros e clientes na América Latina, conectando Inteligência Artificial, Automação Empresarial e Orquestração para acelerar a transformação digital de grandes organizações. Trabalho no desenvolvimento de ecossistemas estratégicos, expansão de mercado e iniciativas de inovação com algumas das maiores empresas da região.", "car.r2": "Product Consultant LATAM", "car.t2": "Ajudei organizações a transformar dados em decisões estratégicas através de Business Intelligence e Analytics, conduzindo projetos para grandes empresas na América Latina.", "car.r3": "Global Finance Project Manager", "car.t3": "Atuei em iniciativas globais de gestão de projetos financeiros, colaborando com equipes internacionais na melhoria de processos, governança e eficiência operacional.", "car.r4": "Business Analyst LATAM", "car.t4": "Participei de projetos estratégicos voltados para análise de negócios, melhoria de processos e suporte às operações corporativas na América Latina.", "ven.tgu": "Operações", "ven.tg1": "Twins Club", "ven.tg2": "Twins Rooftop", "ven.vyu": "Ecossistema", "ven.vy1": "DJs", "ven.vy2": "Casas noturnas", "ven.vy3": "Promotores", "ven.vy4": "Público", "im.k": "Impacto social", "im.t": "Tecnologia é meio. Impacto é o ponto.", "im.p": "Além da atuação profissional e empresarial, apoio iniciativas internacionais de impacto social: patrocino de forma contínua uma criança na África e apoio a <strong>Tim Tebow Foundation</strong>, organização dedicada ao cuidado e à proteção de crianças em situação de vulnerabilidade.", "im.l": "Conhecer a Tim Tebow Foundation", "ct.mail": "Contato profissional", "ssc.v1": "29 mil", "ssc.v2": "23 mil+"}, "en": {"meta.title": "Rodrigo Cid — Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group", "nav.profile": "Profile", "nav.philo": "Philosophy", "nav.work": "Focus", "nav.career": "Career", "nav.ventures": "Ventures", "nav.talks": "Speaking", "nav.contact": "Contact", "cta.save": "Save contact", "cta.book": "Book a meeting", "cta.invite": "Invite to an event", "cta.talk": "Talk partnerships", "hero.role2": "Entrepreneur · Twins Group", "hero.quote": "Between technology and entrepreneurship lies <em class=\"x\">execution</em>. <em>That is where I build businesses.</em>", "hero.lead": "I connect Artificial Intelligence, automation and strategic partnerships to business outcomes — across Latin America and the United States.", "hero.tag": "Reach", "hero.tagv": "20+ countries across the Americas", "pos.ai": "Artificial Intelligence", "pos.auto": "Enterprise Automation", "pos.ent": "Entrepreneurship", "num.1": "years in enterprise technology", "num.2": "countries across the Americas", "num.3": "in Enterprise contracts negotiated", "num.4": "Founder of <strong>Twins Group</strong> and <strong>VYBR Tech</strong>", "num.5": "Strategic partner <span>to some of the largest companies in Latin America</span>", "pov.k": "Point of view", "pov.t": "Most companies don’t have a technology problem. <span>They have an execution problem.</span>", "pov.p": "Tools have never been more accessible. What separates those who capture value from those who pile up pilots is the ability to turn technology into operations, partnerships and measurable results.", "pro.k": "Profile", "pro.title": "Technology, partnerships and my own ventures.", "pro.p1": "I’ve spent more than 15 years in enterprise technology, at <strong>Hewlett-Packard, Apple, Tableau and SS&C Blue Prism</strong>. Along the way I’ve worked across 20+ countries in the Americas and negotiated more than US$10M in Enterprise contracts.", "pro.p2": "Today, as <strong>Partner Manager LATAM at SS&C Blue Prism</strong>, I lead growth strategies for partners and clients across Latin America, connecting Artificial Intelligence, Enterprise Automation and Orchestration to the digital transformation of large organizations.", "pro.p3": "In parallel, I build my own businesses out of Austin, Texas: I founded <strong>Twins Group</strong>, a hospitality and entertainment group, and <strong>VYBR Tech</strong>, a technology startup for the entertainment industry. That dual experience — technology executive and founder — shapes how I see business: technology only matters when it becomes results.", "pro.cap": "Executive & entrepreneur", "ssc.k": "SS&C Blue Prism", "ssc.title": "The global structure behind my work.", "ssc.lead": "SS&C Technologies, founded in 1986, is one of the largest providers of software and services to the financial services and healthcare industries. Blue Prism, founded in 2001 in the UK, popularized RPA and brought automation into the world’s largest corporations. Since 2022 they operate together as SS&C Blue Prism.", "ssc.s1": "employees worldwide", "ssc.s2": "corporate clients", "ssc.s3": "consecutive years as a Leader in the Gartner® Magic Quadrant™ for RPA", "ssc.s4": "launch of WorkHQ, the agentic automation platform", "ssc.wk": "The platform", "ssc.wt": "WorkHQ", "ssc.wp": "Launched in April 2026, WorkHQ brings AI agents, digital workers, APIs and people together in a single governed environment — with orchestration, security, auditability and human oversight. It answers the question that comes after the first pilot: who is in charge when there are a thousand agents, not one?", "ssc.wl": "Explore WorkHQ", "ssc.rk": "My role", "ssc.rt": "Partner Manager LATAM", "ssc.rp": "I develop SS&C Blue Prism’s partner ecosystem in Latin America: consultancies, integrators and technology firms that bring Enterprise AI and automation to their clients — through joint go-to-market, enablement and co-selling.", "wk.k": "Focus", "wk.title": "Where technology becomes results.", "wk.lead": "Building automations and agents has never been easier. The challenge now is making them drive revenue, efficiency and scale — with governance.", "wk.1t": "Applied Artificial Intelligence", "wk.1p": "AI and agents connected to real processes, with business metrics from day one. Fewer pilots, more operations.", "wk.2t": "Enterprise Automation", "wk.2p": "Automation at Enterprise scale: redesigned processes, digital workers and orchestration with security, control and auditability.", "wk.3t": "Partner ecosystems", "wk.3p": "Strategic partnerships that multiply reach: joint go-to-market, enablement and co-selling across Latin America.", "wk.4t": "Entrepreneurship & scale", "wk.4p": "Businesses designed to grow without depending on key people: processes, technology and management built for scale.", "car.k": "Career", "car.title": "My journey.", "car.lead": "15+ years at global technology companies — from business analysis and finance to data, AI and enterprise automation.", "car.now": "Today", "car.d1": "Software and services for finance and healthcare", "car.d2": "Intelligent automation and RPA", "car.d3": "Data, analytics and visualization", "car.d4": "Technology and innovation", "car.d5": "Enterprise technology and infrastructure", "philo.k": "Philosophy", "philo.title": "My philosophy.", "philo.note": "Five principles that guide how I build companies, partnerships and technology.", "ph.1": "Technology should create <b>business outcomes</b>, not just automation.", "ph.2": "<b>Execution</b> beats ideas.", "ph.3": "AI won’t replace entrepreneurs. <b>It will amplify them.</b>", "ph.4": "Great partnerships create <b>exponential growth.</b>", "ph.5": "Businesses should be designed to <b>scale without depending on people.</b>", "ven.k": "Ventures", "ven.title": "Businesses I build.", "ven.lead": "The same execution mindset, applied beyond enterprise tech: companies designed to scale.", "ven.tgr": "Founder · 2024", "ven.tgs": "Hospitality & entertainment · Austin, TX", "ven.tgp": "A hospitality group based in Austin, Texas, focused on entertainment, nightlife and premium experiences. It was created to build our own brands around experience, community and innovation.", "ven.vyr": "Founder & Product Strategist", "ven.vys": "Technology · Entertainment", "ven.vyp": "A technology startup for the entertainment industry: a platform connecting DJs, nightclubs, event promoters and guests in a single digital ecosystem. The mission is to transform operations, customer relationships and the audience experience through technology.", "tk.k": "Speaking", "tk.title": "Speaking.", "tk.lead": "I bring to stages, executive committees and events a practical view on AI, automation, partnerships and entrepreneurship — no hype, focused on execution.", "tk.tag": "Topic", "tk.1t": "Artificial Intelligence applied to business", "tk.1p": "How to move past experiments and connect AI to processes, metrics and real outcomes.", "tk.2t": "Enterprise Automation and Agentic AI", "tk.2p": "Agents, orchestration and governance: what changes when automation starts deciding.", "tk.3t": "Growth strategies in Latin America", "tk.3p": "Partner ecosystems, market expansion and go-to-market across the region.", "tk.4t": "Entrepreneurship and business building", "tk.4p": "From idea to operation: execution, process and businesses designed to scale.", "tk.f": "Formats", "tk.f1": "Keynote", "tk.f2": "Executive panel", "tk.f3": "Workshop", "tk.f4": "Podcasts & interviews", "fr.k": "Other fronts", "fr.title": "Where else I work.", "fr.1": "Entrepreneur", "fr.1p": "Founder of Twins Group and VYBR Tech, based in Austin, Texas.", "fr.2p": "Keynotes and panels on AI, automation, partnerships and entrepreneurship.", "fr.3p": "Advisor to technology, AI, automation and SaaS companies — commercial strategy, growth and market expansion.", "fr.4": "Investor", "fr.4p": "Investing in technology, hospitality and early-stage businesses.", "fr.5p": "Hospitality operations focused on experience, efficiency and process.", "ct.k": "Contact", "ct.title": "Let’s<br>build<br><span>together.</span>", "ct.lead": "Speaking, Enterprise consulting, strategic partnerships, business opportunities or networking — share the context and I’ll get back to you.", "ct.li": "Connect and follow", "ct.wa": "Direct reply", "ct.topic": "Topic", "ct.o.speaking": "Keynotes and panels for events and companies.", "ct.o.consulting": "Enterprise AI and automation applied to your operations.", "ct.o.partnerships": "Alliances, co-selling and go-to-market in Latin America.", "ct.o.business": "Business, investments and new projects.", "ct.o.networking": "Connect, exchange ideas and open doors.", "ct.name": "Name", "ct.company": "Company", "ct.msg": "Message", "ct.msgph": "Briefly share the context.", "ct.send": "Send via WhatsApp", "ct.hint": "Your message opens ready to send on WhatsApp.", "foot.tag": "Execution beats ideas.", "foot.by": "Built by", "dock.book": "Book", "dock.save": "Save", "wa.hi": "Hi Rodrigo! I found you through your website.", "wa.topic": "Topic", "wa.name": "Name", "wa.company": "Company", "vc.title": "Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group", "hero.role3": "Founder · VYBR Tech", "hero.loc": "Austin, Texas · USA", "car.r1": "Partner Manager LATAM · Former Account Director LATAM", "car.t1": "I lead growth strategies for partners and clients across Latin America, connecting Artificial Intelligence, Enterprise Automation and Orchestration to accelerate digital transformation in large organizations. My work spans strategic ecosystems, market expansion and innovation initiatives with some of the region’s largest companies.", "car.r2": "Product Consultant LATAM", "car.t2": "I helped organizations turn data into strategic decisions through Business Intelligence and Analytics, leading projects for large companies across Latin America.", "car.r3": "Global Finance Project Manager", "car.t3": "I worked on global finance project management initiatives, collaborating with international teams on process improvement, governance and operational efficiency.", "car.r4": "Business Analyst LATAM", "car.t4": "I took part in strategic projects focused on business analysis, process improvement and support to corporate operations across Latin America.", "ven.tgu": "Operations", "ven.tg1": "Twins Club", "ven.tg2": "Twins Rooftop", "ven.vyu": "Ecosystem", "ven.vy1": "DJs", "ven.vy2": "Nightclubs", "ven.vy3": "Promoters", "ven.vy4": "Guests", "im.k": "Social impact", "im.t": "Technology is the means. Impact is the point.", "im.p": "Beyond my professional and business work, I support international social impact initiatives: I continuously sponsor a child in Africa and support the <strong>Tim Tebow Foundation</strong>, an organization dedicated to the care and protection of vulnerable children.", "im.l": "About the Tim Tebow Foundation", "ct.mail": "Business contact", "ssc.v1": "29K", "ssc.v2": "23K+"}, "es": {"meta.title": "Rodrigo Cid — Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group", "nav.profile": "Perfil", "nav.philo": "Filosofía", "nav.work": "Enfoque", "nav.career": "Trayectoria", "nav.ventures": "Negocios", "nav.talks": "Conferencias", "nav.contact": "Contacto", "cta.save": "Guardar contacto", "cta.book": "Agendar reunión", "cta.invite": "Invitar a un evento", "cta.talk": "Hablar de alianzas", "hero.role2": "Emprendedor · Twins Group", "hero.quote": "Entre la tecnología y el emprendimiento existe la <em class=\"x\">ejecución</em>. <em>Es ahí donde construyo negocios.</em>", "hero.lead": "Conecto Inteligencia Artificial, automatización y alianzas estratégicas con resultados de negocio — en América Latina y Estados Unidos.", "hero.tag": "Presencia", "hero.tagv": "20+ países en las Américas", "pos.ai": "Inteligencia Artificial", "pos.auto": "Automatización Empresarial", "pos.ent": "Emprendimiento", "num.1": "años en tecnología corporativa", "num.2": "países en las Américas", "num.3": "en contratos Enterprise negociados", "num.4": "Fundador de <strong>Twins Group</strong> y <strong>VYBR Tech</strong>", "num.5": "Socio estratégico <span>de algunas de las mayores empresas de América Latina</span>", "pov.k": "Punto de vista", "pov.t": "La mayoría de las empresas no tiene un problema de tecnología. <span>Tiene un problema de ejecución.</span>", "pov.p": "Las herramientas nunca fueron tan accesibles. Lo que separa a quien captura valor de quien acumula pilotos es la capacidad de convertir la tecnología en operación, alianzas y resultados medibles.", "pro.k": "Perfil", "pro.title": "Tecnología, alianzas y negocios propios.", "pro.p1": "Son más de 15 años en tecnología corporativa, en <strong>Hewlett-Packard, Apple, Tableau y SS&C Blue Prism</strong>. En ese recorrido trabajé en más de 20 países de las Américas y negocié más de US$ 10 millones en contratos Enterprise.", "pro.p2": "Hoy, como <strong>Partner Manager LATAM en SS&C Blue Prism</strong>, lidero estrategias de crecimiento para socios y clientes en América Latina, conectando Inteligencia Artificial, Automatización Empresarial y Orquestación con la transformación digital de grandes organizaciones.", "pro.p3": "En paralelo, construyo negocios propios desde Austin, Texas: fundé <strong>Twins Group</strong>, grupo de hospitalidad y entretenimiento, y <strong>VYBR Tech</strong>, startup de tecnología para la industria del entretenimiento. Esa doble experiencia — ejecutivo de tecnología y emprendedor — define mi forma de ver los negocios: la tecnología solo vale cuando se convierte en resultado.", "pro.cap": "Ejecutivo & emprendedor", "ssc.k": "SS&C Blue Prism", "ssc.title": "La estructura global detrás de mi trabajo.", "ssc.lead": "SS&C Technologies, fundada en 1986, es uno de los mayores proveedores de software y servicios para los sectores financiero y de salud. Blue Prism, creada en 2001 en el Reino Unido, popularizó el concepto de RPA y llevó la automatización a las grandes corporaciones. Desde 2022 operan juntas como SS&C Blue Prism.", "ssc.s1": "colaboradores en el mundo", "ssc.s2": "clientes corporativos", "ssc.s3": "años consecutivos como Líder en el Gartner® Magic Quadrant™ de RPA", "ssc.s4": "lanzamiento de WorkHQ, la plataforma de automatización agéntica", "ssc.wk": "La plataforma", "ssc.wt": "WorkHQ", "ssc.wp": "Lanzado en abril de 2026, WorkHQ reúne agentes de IA, digital workers, APIs y personas en un único entorno gobernado — con orquestación, seguridad, auditoría y supervisión humana. Es la respuesta a la pregunta que llega después del primer piloto: ¿quién está al mando cuando son mil agentes, y no uno?", "ssc.wl": "Conocer WorkHQ", "ssc.rk": "Mi rol", "ssc.rt": "Partner Manager LATAM", "ssc.rp": "Desarrollo el ecosistema de socios de SS&C Blue Prism en América Latina: consultoras, integradores y empresas de tecnología que llevan IA y automatización Enterprise a sus clientes — con go-to-market conjunto, capacitación y co-venta.", "wk.k": "Enfoque", "wk.title": "Donde la tecnología se convierte en resultado.", "wk.lead": "Crear automatizaciones y agentes nunca fue tan simple. El desafío ahora es que generen ingresos, eficiencia y escala — con gobernanza.", "wk.1t": "Inteligencia Artificial aplicada", "wk.1p": "IA y agentes conectados a procesos reales, con métricas de negocio desde el primer día. Menos piloto, más operación.", "wk.2t": "Automatización Empresarial", "wk.2p": "Automatización a escala Enterprise: procesos rediseñados, digital workers y orquestación con seguridad, control y auditoría.", "wk.3t": "Ecosistemas de socios", "wk.3p": "Alianzas estratégicas que multiplican el alcance: go-to-market conjunto, capacitación y co-venta en toda América Latina.", "wk.4t": "Emprendimiento y escala", "wk.4p": "Negocios diseñados para crecer sin depender de personas clave: procesos, tecnología y gestión orientados a escala.", "car.k": "Trayectoria", "car.title": "Mi trayectoria.", "car.lead": "Más de 15 años en empresas globales de tecnología — del análisis de negocios y finanzas a datos, IA y automatización empresarial.", "car.now": "Hoy", "car.d1": "Software y servicios para finanzas y salud", "car.d2": "Automatización inteligente y RPA", "car.d3": "Datos, analytics y visualización", "car.d4": "Tecnología e innovación", "car.d5": "Tecnología corporativa e infraestructura", "philo.k": "Filosofía", "philo.title": "Mi filosofía.", "philo.note": "Cinco principios que guían cómo construyo empresas, alianzas y tecnología.", "ph.1": "La tecnología debe generar <b>resultados de negocio</b>, no solo automatización.", "ph.2": "La <b>ejecución</b> vence a las ideas.", "ph.3": "La IA no reemplazará a los emprendedores. <b>Los amplificará.</b>", "ph.4": "Las grandes alianzas generan <b>crecimiento exponencial.</b>", "ph.5": "Los negocios deben diseñarse para <b>escalar sin depender de las personas.</b>", "ven.k": "Emprendimientos", "ven.title": "Negocios que construyo.", "ven.lead": "La misma lógica de ejecución, aplicada más allá de la tecnología corporativa: empresas diseñadas para escalar.", "ven.tgr": "Fundador · 2024", "ven.tgs": "Hospitalidad y entretenimiento · Austin, TX", "ven.tgp": "Grupo de hospitalidad con sede en Austin, Texas, enfocado en entretenimiento, vida nocturna y experiencias premium. Nació para desarrollar marcas propias centradas en experiencia, comunidad e innovación.", "ven.vyr": "Founder & Product Strategist", "ven.vys": "Tecnología · Entretenimiento", "ven.vyp": "Startup de tecnología para la industria del entretenimiento: una plataforma que conecta DJs, discotecas, promotores de eventos y clientes en un único ecosistema digital. La misión es transformar la gestión operativa, la relación con los clientes y la experiencia del público a través de la tecnología.", "tk.k": "Conferencias", "tk.title": "Speaking.", "tk.lead": "Llevo a escenarios, comités ejecutivos y eventos una visión práctica sobre IA, automatización, alianzas y emprendimiento — sin hype, con foco en la ejecución.", "tk.tag": "Tema", "tk.1t": "Inteligencia Artificial aplicada a los negocios", "tk.1p": "Cómo salir del experimento y conectar la IA con procesos, métricas y resultados reales.", "tk.2t": "Automatización Empresarial y Agentic AI", "tk.2p": "Agentes, orquestación y gobernanza: qué cambia cuando la automatización empieza a decidir.", "tk.3t": "Estrategias de crecimiento en América Latina", "tk.3p": "Ecosistemas de socios, expansión de mercado y go-to-market en la región.", "tk.4t": "Emprendimiento y construcción de negocios", "tk.4p": "De la idea a la operación: ejecución, procesos y negocios diseñados para escalar.", "tk.f": "Formatos", "tk.f1": "Keynote", "tk.f2": "Panel ejecutivo", "tk.f3": "Workshop", "tk.f4": "Podcasts y entrevistas", "fr.k": "Otros frentes", "fr.title": "Dónde más actúo.", "fr.1": "Emprendedor", "fr.1p": "Fundador de Twins Group y VYBR Tech, en Austin, Texas.", "fr.2p": "Conferencias y paneles sobre IA, automatización, alianzas y emprendimiento.", "fr.3p": "Advisor de empresas de tecnología, IA, automatización y SaaS — estrategia comercial, crecimiento y expansión de mercado.", "fr.4": "Inversionista", "fr.4p": "Inversión en tecnología, hospitalidad y negocios en etapa inicial.", "fr.5p": "Operación de hospitalidad enfocada en experiencia, eficiencia y procesos.", "ct.k": "Contacto", "ct.title": "Construyamos<br><span>juntos.</span>", "ct.lead": "Speaking, consultoría Enterprise, alianzas estratégicas, oportunidades de negocio o networking — cuéntame el contexto y te respondo.", "ct.li": "Conectar y seguir contenidos", "ct.wa": "Respuesta directa", "ct.topic": "Asunto", "ct.o.speaking": "Keynotes y paneles para eventos y empresas.", "ct.o.consulting": "IA y automatización Enterprise aplicadas a tu operación.", "ct.o.partnerships": "Alianzas, co-venta y go-to-market en América Latina.", "ct.o.business": "Negocios, inversiones y nuevos proyectos.", "ct.o.networking": "Conectar, intercambiar ideas y abrir puertas.", "ct.name": "Nombre", "ct.company": "Empresa", "ct.msg": "Mensaje", "ct.msgph": "Cuéntame brevemente el contexto.", "ct.send": "Enviar por WhatsApp", "ct.hint": "Tu mensaje se abre listo en WhatsApp.", "foot.tag": "Execution beats ideas.", "foot.by": "Desarrollado por", "dock.book": "Agendar", "dock.save": "Guardar", "wa.hi": "¡Hola, Rodrigo! Llegué a través de tu sitio web.", "wa.topic": "Asunto", "wa.name": "Nombre", "wa.company": "Empresa", "vc.title": "Partner Manager LATAM | SS&C Blue Prism · Entrepreneur | Twins Group", "hero.role3": "Founder · VYBR Tech", "hero.loc": "Austin, Texas · EE. UU.", "car.r1": "Partner Manager LATAM · Former Account Director LATAM", "car.t1": "Lidero estrategias de crecimiento para socios y clientes en América Latina, conectando Inteligencia Artificial, Automatización Empresarial y Orquestación para acelerar la transformación digital de grandes organizaciones. Trabajo en el desarrollo de ecosistemas estratégicos, expansión de mercado e iniciativas de innovación con algunas de las mayores empresas de la región.", "car.r2": "Product Consultant LATAM", "car.t2": "Ayudé a organizaciones a transformar datos en decisiones estratégicas a través de Business Intelligence y Analytics, conduciendo proyectos para grandes empresas en América Latina.", "car.r3": "Global Finance Project Manager", "car.t3": "Participé en iniciativas globales de gestión de proyectos financieros, colaborando con equipos internacionales en mejora de procesos, gobernanza y eficiencia operativa.", "car.r4": "Business Analyst LATAM", "car.t4": "Participé en proyectos estratégicos de análisis de negocios, mejora de procesos y soporte a las operaciones corporativas en América Latina.", "ven.tgu": "Operaciones", "ven.tg1": "Twins Club", "ven.tg2": "Twins Rooftop", "ven.vyu": "Ecosistema", "ven.vy1": "DJs", "ven.vy2": "Discotecas", "ven.vy3": "Promotores", "ven.vy4": "Público", "im.k": "Impacto social", "im.t": "La tecnología es el medio. El impacto es el punto.", "im.p": "Además de mi actuación profesional y empresarial, apoyo iniciativas internacionales de impacto social: patrocino de forma continua a un niño en África y apoyo a la <strong>Tim Tebow Foundation</strong>, organización dedicada al cuidado y la protección de niños en situación de vulnerabilidad.", "im.l": "Conocer la Tim Tebow Foundation", "ct.mail": "Contacto profesional", "ssc.v1": "29 mil", "ssc.v2": "23 mil+"}};
 const TOPICS = {speaking:"Speaking",consulting:"Enterprise Consulting",partnerships:"Strategic Partnerships",business:"Business Opportunities",networking:"Networking"};
-let lang = "pt";
+let lang = "pt", topic = "speaking";
 const store = {get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const $$ = s => [...document.querySelectorAll(s)];
 
 function applyLang(l){
   if(!T[l]) l="pt"; lang=l; const d=T[l];
   document.documentElement.lang = l==="pt"?"pt-BR":l;
-  document.querySelectorAll("[data-i18n]").forEach(el=>{const v=d[el.dataset.i18n]; if(v!=null) el.textContent=v;});
-  document.querySelectorAll("[data-i18n-html]").forEach(el=>{const v=d[el.dataset.i18nHtml]; if(v!=null) el.innerHTML=v;});
-  document.querySelectorAll("[data-i18n-ph]").forEach(el=>{const v=d[el.dataset.i18nPh]; if(v!=null) el.placeholder=v;});
-  document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.lang===l));
+  $$("[data-i18n]").forEach(el=>{const v=d[el.dataset.i18n]; if(v!=null) el.textContent=v;});
+  $$("[data-i18n-html]").forEach(el=>{const v=d[el.dataset.i18nHtml]; if(v!=null) el.innerHTML=v;});
+  $$("[data-i18n-ph]").forEach(el=>{const v=d[el.dataset.i18nPh]; if(v!=null) el.placeholder=v;});
+  $$(".lang button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.lang===l));
   document.title = d["meta.title"];
   store.set("rc-lang", l);
-  const u=new URL(location.href); if(l==="pt") u.searchParams.delete("lang"); else u.searchParams.set("lang",l);
-  history.replaceState(null,"",u);
-  waLinks();
+  try{const u=new URL(location.href); if(l==="pt") u.searchParams.delete("lang"); else u.searchParams.set("lang",l); history.replaceState(null,"",u);}catch(e){}
+  links(); setTopic(topic);
 }
 function detectLang(){
   const q=new URLSearchParams(location.search).get("lang"); if(q&&T[q]) return q;
   const s=store.get("rc-lang"); if(s&&T[s]) return s;
   const n=(navigator.language||"pt").slice(0,2).toLowerCase(); return T[n]?n:"pt";
 }
-document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>applyLang(b.dataset.lang)));
+$$(".lang button").forEach(b=>b.addEventListener("click",()=>applyLang(b.dataset.lang)));
 
 /* ---------- links ---------- */
-function waUrl(text){return "https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(text)}
-function waLinks(){document.querySelectorAll("a.js-wa").forEach(a=>a.href=waUrl(T[lang]["wa.hi"]))}
-document.querySelectorAll("a.js-li").forEach(a=>a.href=CONFIG.linkedin);
-document.querySelectorAll("a.js-calendly").forEach(a=>a.href=CONFIG.calendly);
+const waUrl = text => "https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(text);
+function links(){
+  $$("a.js-wa").forEach(a=>a.href=waUrl(T[lang]["wa.hi"]));
+  $$("a.js-li").forEach(a=>a.href=CONFIG.linkedin);
+  $$("a.js-calendly").forEach(a=>a.href=CONFIG.calendly);
+  const cal=!!CONFIG.calendly;
+  $$(".js-calendly").forEach(a=>{a.hidden=!cal; if(!cal) a.setAttribute("aria-hidden","true")});
+  if(!cal){
+    const w=document.querySelector(".hero__cta a.js-wa"); if(w){w.classList.remove("btn--ghost");w.classList.add("btn--primary")}
+    const dw=document.querySelector("#dock a.js-wa"); if(dw) dw.classList.add("is-main");
+  }
+  if(CONFIG.phoneDisplay) $$(".js-phone").forEach(s=>s.textContent=CONFIG.phoneDisplay);
+  if(CONFIG.instagram){const h=CONFIG.instagram.replace(/^@/,""); $$("a.js-ig").forEach(a=>{a.hidden=false;a.href="https://instagram.com/"+h}); $$(".js-ig-h").forEach(s=>s.textContent=(CONFIG.igLabel?CONFIG.igLabel+" · ":"")+"@"+h);}
+  if(CONFIG.email){$$("a.js-mail").forEach(a=>{a.hidden=false;a.href="mailto:"+CONFIG.email}); $$(".js-mail-t").forEach(s=>s.textContent=CONFIG.email);}
+}
 
-/* ---------- form -> WhatsApp ---------- */
-let topic="speaking";
-document.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>{
-  topic=b.dataset.topic; document.querySelectorAll(".opt").forEach(o=>o.setAttribute("aria-pressed",o===b));
-}));
-document.getElementById("form").addEventListener("submit",e=>{
-  e.preventDefault(); const f=e.target, d=T[lang];
-  const name=f.name.value.trim(), company=f.company.value.trim(), msg=f.msg.value.trim();
-  if(!name){f.name.focus(); f.name.style.borderColor="rgba(255,90,90,.6)"; return;}
+/* ---------- contact form -> WhatsApp ---------- */
+function setTopic(t){
+  topic=t; $$(".opt").forEach(o=>o.setAttribute("aria-pressed",o.dataset.topic===t));
+  const d=document.getElementById("optDesc"); if(d) d.textContent=T[lang]["ct.o."+t]||"";
+}
+$$(".opt").forEach(b=>b.addEventListener("click",()=>setTopic(b.dataset.topic)));
+$$("[data-topic-link]").forEach(a=>a.addEventListener("click",()=>setTopic(a.dataset.topicLink)));
+const form=document.getElementById("form");
+form.addEventListener("submit",e=>{
+  e.preventDefault(); const d=T[lang];
+  const name=form.name.value.trim(), company=form.company.value.trim(), msg=form.msg.value.trim();
+  if(!name){form.name.focus(); form.name.classList.add("err"); return;}
   const lines=[d["wa.hi"],"",`*${d["wa.topic"]}:* ${TOPICS[topic]}`,`*${d["wa.name"]}:* ${name}`];
   if(company) lines.push(`*${d["wa.company"]}:* ${company}`);
-  if(msg){lines.push("",msg)}
+  if(msg) lines.push("",msg);
   window.open(waUrl(lines.join("\n")),"_blank","noopener");
 });
-document.querySelector('#form [name="name"]').addEventListener("input",e=>e.target.style.borderColor="");
+form.name.addEventListener("input",()=>form.name.classList.remove("err"));
 
 /* ---------- vCard ---------- */
 async function vcard(){
   let photo="";
-  try{
-    const r=await fetch("assets/vcard.jpg"); const b=await r.blob();
-    photo=await new Promise(res=>{const fr=new FileReader(); fr.onload=()=>res(String(fr.result).split(",")[1]); fr.readAsDataURL(b)});
-  }catch(e){}
+  try{const r=await fetch("assets/vcard.jpg"); const b=await r.blob();
+    photo=await new Promise(res=>{const fr=new FileReader(); fr.onload=()=>res(String(fr.result).split(",")[1]); fr.readAsDataURL(b)});}catch(e){}
   const L=["BEGIN:VCARD","VERSION:3.0","N:Cid;Rodrigo;;;","FN:Rodrigo Cid","ORG:SS&C Blue Prism","TITLE:"+T[lang]["vc.title"]];
   if(CONFIG.whatsapp && !/^5500+$/.test(CONFIG.whatsapp)) L.push("TEL;TYPE=CELL:+"+CONFIG.whatsapp);
   if(CONFIG.email) L.push("EMAIL;TYPE=WORK:"+CONFIG.email);
-  L.push("URL:"+CONFIG.site, "X-SOCIALPROFILE;TYPE=linkedin:"+CONFIG.linkedin);
-  if(photo){L.push("PHOTO;ENCODING=b;TYPE=JPEG:"+photo)}
+  L.push("ADR;TYPE=WORK:;;;Austin;TX;;USA","URL:"+CONFIG.site, "X-SOCIALPROFILE;TYPE=linkedin:"+CONFIG.linkedin);
+  if(photo) L.push("PHOTO;ENCODING=b;TYPE=JPEG:"+photo);
   L.push("END:VCARD");
-  const blob=new Blob([L.join("\r\n")],{type:"text/vcard;charset=utf-8"});
-  const url=URL.createObjectURL(blob); const a=document.createElement("a");
-  a.href=url; a.download="Rodrigo-Cid.vcf"; document.body.appendChild(a); a.click(); a.remove();
+  const url=URL.createObjectURL(new Blob([L.join("\r\n")],{type:"text/vcard;charset=utf-8"}));
+  const a=document.createElement("a"); a.href=url; a.download="Rodrigo-Cid.vcf"; document.body.appendChild(a); a.click(); a.remove();
   setTimeout(()=>URL.revokeObjectURL(url),4000);
 }
-document.querySelectorAll(".js-vcard").forEach(b=>b.addEventListener("click",vcard));
+$$(".js-vcard").forEach(b=>b.addEventListener("click",vcard));
 
 /* ---------- nav state ---------- */
-const nav=document.getElementById("nav"), dock=document.getElementById("dock"), papers=[...document.querySelectorAll(".paper")];
+const nav=document.getElementById("nav"), dock=document.getElementById("dock"), papers=$$(".paper");
 function onScroll(){
   const y=scrollY; nav.classList.toggle("is-solid", y>24);
-  const onPaper=papers.some(p=>{const r=p.getBoundingClientRect(); return r.top<=32 && r.bottom>=32});
-  nav.classList.toggle("on-paper", onPaper);
+  nav.classList.toggle("on-paper", papers.some(p=>{const r=p.getBoundingClientRect(); return r.top<=32 && r.bottom>=32}));
   dock.classList.toggle("show", y>innerHeight*.6);
 }
 addEventListener("scroll",onScroll,{passive:true}); onScroll();
@@ -755,18 +969,17 @@ addEventListener("scroll",onScroll,{passive:true}); onScroll();
 /* ---------- reveal ---------- */
 const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in"); io.unobserve(e.target)}}),{rootMargin:"0px 0px -8% 0px",threshold:.08});
-document.querySelectorAll(".rv").forEach(el=>io.observe(el));
-requestAnimationFrame(()=>document.querySelectorAll(".hero .rv").forEach(el=>el.classList.add("in")));
+$$(".rv").forEach(el=>io.observe(el));
+requestAnimationFrame(()=>$$(".hero .rv").forEach(el=>el.classList.add("in")));
 
 /* ---------- philosophy focus ---------- */
-const items=[...document.querySelectorAll(".philo__item")];
+const items=$$(".philo__item");
 if(reduce){items.forEach(i=>i.classList.add("is-on"))}
 else{
   const focus=()=>{
     const mid=innerHeight*.52; let best=null, bd=1e9;
-    items.forEach(i=>{const r=i.getBoundingClientRect(); const c=r.top+r.height/2; const d=Math.abs(c-mid); if(d<bd){bd=d;best=i}
-      if(r.bottom<mid-innerHeight*.05) i.classList.add("is-on");});
-    items.forEach(i=>{const r=i.getBoundingClientRect(); if(r.top>mid) i.classList.remove("is-on")});
+    items.forEach(i=>{const r=i.getBoundingClientRect(), c=r.top+r.height/2, d=Math.abs(c-mid);
+      if(d<bd){bd=d;best=i} if(r.bottom<mid-innerHeight*.05) i.classList.add("is-on"); if(r.top>mid) i.classList.remove("is-on");});
     if(best && bd<innerHeight*.5) best.classList.add("is-on");
   };
   addEventListener("scroll",focus,{passive:true}); focus();
@@ -780,10 +993,11 @@ const cio=new IntersectionObserver(es=>es.forEach(e=>{
   const tick=t=>{const p=Math.min(1,(t-t0)/dur); el.textContent=Math.round(to*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(tick)};
   el.textContent="0"; requestAnimationFrame(tick);
 }),{threshold:.6});
-document.querySelectorAll(".js-count").forEach(el=>cio.observe(el));
+$$(".js-count").forEach(el=>cio.observe(el));
 
 document.getElementById("y").textContent=new Date().getFullYear();
 applyLang(detectLang());
+
 </script>
 </body>
 </html>
